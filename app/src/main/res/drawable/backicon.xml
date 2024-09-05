@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="34dp"
+    android:height="36dp"
+    android:viewportWidth="34"
+    android:viewportHeight="36">
+
+    <!-- Background ellipse -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M17,1C8.611,1 1,8.611 1,17s7.611,16 16,16 16,-7.611 16,-16S25.389,1 17,1z"/>
+
+    <!-- Path with strokes -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M10,16.8814 L14.2188,22.2594 M25,16.8814 H10 H25 M10,16.8814 L14.2188,12 L10,16.8814"/>
+</vector>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/searchFragment"
+        android:title="Search"
+        android:icon="@drawable/ic_search"/>
+
+    <item
+        android:id="@+id/saveFragment"
+        android:title="Save"
+        android:icon="@drawable/ic_save"/>
+
+    <item
+        android:id="@+id/plannerFragment"
+        android:title="Plan"
+        android:icon="@drawable/ic_calendar_plan"/>
+
+</menu>
