@@ -11,4 +11,6 @@ public interface RepositoryInterface {
 
     public void getSuggestMealsNetwork (Call<MyResponseForRandomMeal> call , NetworkDelegate networkDelegate);
 
+    void getMealByIdNetwork (Call<MyResponseForRandomMeal> call , NetworkDelegate networkDelegate);
+
 }

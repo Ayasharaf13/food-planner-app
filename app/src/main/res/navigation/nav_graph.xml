@@ -12,6 +12,8 @@
         <action
             android:id="@+id/action_homeFragment_to_detailsMealFragment"
             app:destination="@id/detailsMealFragment" />
+
+
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
@@ -20,7 +22,6 @@
     <fragment
         android:id="@+id/saveFragment"
         android:name="com.example.foodplanner.save.view.SaveFragment"
-        android:label="fragment_save"
         tools:layout="@layout/fragment_save" />
     <fragment
         android:id="@+id/plannerFragment"
@@ -28,5 +29,13 @@
         tools:layout="@layout/fragment_planner" />
     <fragment
         android:id="@+id/detailsMealFragment"
-        android:name="com.example.foodplanner.detailsmeals.view.DetailsMealFragment" />
+        android:name="com.example.foodplanner.detailsmeals.view.DetailsMealFragment"
+        tools:layout="@layout/fragment_details_meal">
+
+
+        <argument
+            android:name="idMeal"
+            app:argType="string"
+             />
+    </fragment>
 </navigation>

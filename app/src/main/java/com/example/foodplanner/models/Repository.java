@@ -36,6 +36,12 @@ public class Repository implements  RepositoryInterface{
         remoteSource.makeApiCall(call,networkDelegate);
     }
 
+    @Override
+    public void getMealByIdNetwork(Call<MyResponseForRandomMeal> call, NetworkDelegate networkDelegate) {
+
+        remoteSource.makeApiCall(call,networkDelegate);
+    }
+
 
 }
 
