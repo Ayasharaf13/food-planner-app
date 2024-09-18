@@ -1,6 +1,7 @@
 package com.example.foodplanner.home.view;
 
 import android.annotation.SuppressLint;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
@@ -60,7 +63,37 @@ public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder>
                 .into(holder.imageMeal);
 
 
+
       holder.titleMeal.setText(currentObj.getStrMeal());
+      holder.imageSave.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+
+              String id =  currentObj.getIdMeal();
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToSaveFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+
+          }
+
+      });
+
+
+
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+
+
+          @Override
+          public void onClick(View view) {
+
+            String id = currentObj.getIdMeal();
+
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+          }
+      });
 
     }
 
