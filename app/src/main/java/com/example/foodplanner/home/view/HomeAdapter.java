@@ -95,6 +95,20 @@ public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder>
           }
       });
 
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+
+
+          @Override
+          public void onClick(View view) {
+
+            String id = currentObj.getIdMeal();
+
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+          }
+      });
+
     }
 
     static class RandomMealDiffUtil extends DiffUtil.ItemCallback<RandomMeal> {

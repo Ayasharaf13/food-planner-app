@@ -6,17 +6,24 @@ import androidx.room.PrimaryKey;
 @Entity (tableName = "Meals_table")
 public class RandomMeal {
 
+<<<<<<< HEAD
     @PrimaryKey(autoGenerate = true)
     public String idMeal="";
 
+=======
+    public String idMeal="";
+>>>>>>> a9e1adc143fdd02927f2d841ceff456f59aad7bd
     public String strMeal="";
     public String strMealThumb="";
     public String strYoutube="";
    public String strInstructions="";
 
+<<<<<<< HEAD
    public String strCategory ="";
     public String strArea = "";
    public String strTags ="";
+=======
+>>>>>>> a9e1adc143fdd02927f2d841ceff456f59aad7bd
 
     public String strIngredient1="";
     public String strIngredient2="";
@@ -39,6 +46,7 @@ public class RandomMeal {
     public String strIngredient19="";
     public String strIngredient20="";
 
+<<<<<<< HEAD
     public String getStrCategory() {
         return strCategory;
     }
@@ -63,6 +71,8 @@ public class RandomMeal {
         this.strTags = strTags;
     }
 
+=======
+>>>>>>> a9e1adc143fdd02927f2d841ceff456f59aad7bd
     public String getStrIngredient1() {
         return strIngredient1;
     }

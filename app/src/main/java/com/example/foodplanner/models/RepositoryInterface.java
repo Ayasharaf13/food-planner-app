@@ -17,6 +17,7 @@ public interface RepositoryInterface {
 
     void getMealByIdNetwork (Call<MyResponseForRandomMeal> call , NetworkDelegate networkDelegate);
 
+<<<<<<< HEAD
 
     void saveMeal (RandomMeal meal);
     void deleteMeal(RandomMeal meal);
@@ -25,4 +26,6 @@ public interface RepositoryInterface {
 
 
 
+=======
+>>>>>>> a9e1adc143fdd02927f2d841ceff456f59aad7bd
 }

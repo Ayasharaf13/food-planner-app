@@ -46,6 +46,7 @@ public class Repository implements  RepositoryInterface{
         remoteSource.makeApiCall(call,networkDelegate);
     }
 
+<<<<<<< HEAD
     @Override
     public void saveMeal(RandomMeal meal) {
         localSource.saveMeal(meal);
@@ -63,6 +64,8 @@ public class Repository implements  RepositoryInterface{
       localSource.getAllSavedData();
     }
 
+=======
+>>>>>>> a9e1adc143fdd02927f2d841ceff456f59aad7bd
 
 }
 
