@@ -102,14 +102,8 @@ public class HomeFragment extends Fragment implements HomeViewInterface {
         txtNewCard = view.findViewById(R.id.newTextCard);
         btnregister= view.findViewById(R.id.btn_registration);
 
-        btnregister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                NavDirections action= HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment();
-                Navigation.findNavController(view).navigate(action);
-            }
-        });
+
     }
 
     @Override

@@ -1,4 +1,5 @@
-package com.example.foodplanner.home.view;
+package com.example.foodplanner.save.view;
+
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
@@ -7,53 +8,70 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.navigation.NavDirections;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.foodplanner.R;
+import com.example.foodplanner.home.view.HomeAdapter;
 import com.example.foodplanner.models.RandomMeal;
+import com.example.foodplanner.models.Repository;
+import com.example.foodplanner.network.FoodClient;
+import com.example.foodplanner.save.presenter.SavePresenterInterface;
+
+import java.util.List;
+
+public class SaveMealsAdapter extends ListAdapter<RandomMeal,SaveMealsAdapter.ViewHolder> {
+   /* SavePresenterInterface savePresenterInterface;
+    savePresenterInterface = new SavePresenter(
+            Repository.getInstance(FoodClient.getInstance(),ConcreteLocalSource.getInstance(requireContext()))
+            , this);
+
+    */
+
+    InterfaceAdapter deleteClick  = (id) -> {};
 
 
 
-public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder> {
-
-
-    protected HomeAdapter() {
-        super(new RandomMealDiffUtil ());
+    protected SaveMealsAdapter( InterfaceAdapter delete) {
+        super(new SaveMealsAdapter.SaveMealsDiffUtil());
     }
+
+
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imageMeal;
-        ImageView imageSave;
+        ImageView imageDelete;
         TextView titleMeal;
         Button watchBtn;
 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-           imageMeal = itemView.findViewById(R.id.imgMealItem);
-           imageSave = itemView.findViewById(R.id.img_save_item);
-           titleMeal = itemView.findViewById(R.id.nameMealItem);
-           watchBtn = itemView.findViewById(R.id.btnWatchItem);
+            imageMeal = itemView.findViewById(R.id.imgMealSaveItem);
+            imageDelete = itemView.findViewById(R.id.deleteItem);
+            titleMeal = itemView.findViewById(R.id.nameMealSaveItem);
+            watchBtn = itemView.findViewById(R.id.btnWatchSaveItem);
         }
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.meal_item, parent, false);
-        return new ViewHolder(view);
+
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.save_item, parent, false);
+        return new SaveMealsAdapter.ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
+
         RandomMeal currentObj = getItem(position);
         Glide.with(holder.itemView.getContext())
 
@@ -62,43 +80,26 @@ public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder>
                 .error(R.drawable.ic_launcher_background)
                 .into(holder.imageMeal);
 
+        holder.titleMeal.setText(currentObj.getStrMeal());
 
 
-      holder.titleMeal.setText(currentObj.getStrMeal());
-
-      holder.imageSave.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-
-
-              String id =  currentObj.getIdMeal();
-              NavDirections action = HomeFragmentDirections.actionHomeFragmentToSaveFragment(id);
-              Navigation.findNavController(view).navigate(action);
+       holder.imageDelete.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+                String id = currentObj.getIdMeal();
+                deleteClick.delete(id);
 
 
-          }
-
-      });
+           }
+       });
 
 
 
-      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
-
-
-          @Override
-          public void onClick(View view) {
-
-            String id = currentObj.getIdMeal();
-
-              NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
-              Navigation.findNavController(view).navigate(action);
-
-          }
-      });
 
     }
 
-    static class RandomMealDiffUtil extends DiffUtil.ItemCallback<RandomMeal> {
+
+    static class SaveMealsDiffUtil extends DiffUtil.ItemCallback<RandomMeal> {
 
         @Override
         public boolean areItemsTheSame(@NonNull RandomMeal oldItem, @NonNull RandomMeal newItem) {
@@ -111,4 +112,5 @@ public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder>
             return oldItem.equals(newItem);
         }
     }
+
 }
