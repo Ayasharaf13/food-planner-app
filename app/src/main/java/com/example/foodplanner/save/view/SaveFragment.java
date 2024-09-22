@@ -24,6 +24,7 @@ import com.example.foodplanner.network.FoodClient;
 import com.example.foodplanner.save.presenter.SavePresenter;
 import com.example.foodplanner.save.presenter.SavePresenterInterface;
 
+<<<<<<< HEAD
 import java.util.List;
 import java.util.Observer;
 
@@ -35,6 +36,12 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
    String idMealSave;
 
 
+=======
+public class SaveFragment extends Fragment {
+
+
+
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
 
     public SaveFragment() {
         // Required empty public constructor
@@ -52,6 +59,7 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
 
                     savePresenterInterface = new SavePresenter(
                     Repository.getInstance(FoodClient.getInstance(),ConcreteLocalSource.getInstance(requireContext()))
@@ -66,6 +74,11 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
 
                     saveMealsAdapter = new SaveMealsAdapter(deleteClick);
 
+=======
+        if (getArguments() != null) {
+
+        }
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
     }
 
     @Override

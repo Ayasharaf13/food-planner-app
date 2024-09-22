@@ -57,10 +57,19 @@ dependencies {
 
     //annotationProcessor "com.github.bumptech.glide:compiler:4.11.0"
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
     def room_version = "2.6.1"
 
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a9e1adc143fdd02927f2d841ceff456f59aad7bd
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
 
 
 }

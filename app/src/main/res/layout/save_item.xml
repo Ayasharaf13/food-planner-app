@@ -6,31 +6,52 @@
     android:layout_height="wrap_content">
 
     <ImageView
+<<<<<<< HEAD
         android:id="@+id/imgMealSaveItem"
+=======
+        android:id="@+id/img_meal_item"
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
         android:layout_width="170dp"
         android:layout_height="102dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="5dp"
+<<<<<<< HEAD
         app:layout_constraintBottom_toTopOf="@+id/nameMealSaveItem"
+=======
+        app:layout_constraintBottom_toTopOf="@+id/name_meal_item"
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <TextView
+<<<<<<< HEAD
         android:id="@+id/nameMealSaveItem"
+=======
+        android:id="@+id/name_meal_item"
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
         android:layout_width="126dp"
         android:layout_height="34dp"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="1dp"
         android:fontFamily="@font/suezone"
         android:text="TextView"
+<<<<<<< HEAD
         app:layout_constraintBottom_toTopOf="@+id/btnWatchSaveItem"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgMealSaveItem" />
 
     <Button
         android:id="@+id/btnWatchSaveItem"
+=======
+        app:layout_constraintBottom_toTopOf="@+id/btn_watch_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_meal_item" />
+
+    <Button
+        android:id="@+id/btn_watch_item"
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
         android:layout_width="122dp"
         android:layout_height="48dp"
         android:layout_marginStart="25dp"
@@ -40,18 +61,41 @@
         android:backgroundTint="@color/dark_green"
         app:cornerRadius="100dp"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/nameMealSaveItem" />
 
 
     <ImageView
         android:id="@+id/deleteItem"
+=======
+        app:layout_constraintTop_toBottomOf="@+id/name_meal_item" />
+
+
+    <ImageView
+        android:id="@+id/img_save_item"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_watch_item"
+        app:layout_constraintTop_toBottomOf="@+id/name_meal_item"
+        app:srcCompat="@drawable/save_icon" />
+
+    <ImageView
+        android:id="@+id/binSave"
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
         android:layout_width="15dp"
         android:layout_height="20dp"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="58dp"
         app:layout_constraintBottom_toBottomOf="parent"
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="@+id/imgMealSaveItem"
         app:layout_constraintStart_toEndOf="@+id/nameMealSaveItem"
+=======
+        app:layout_constraintEnd_toEndOf="@+id/img_meal_item"
+        app:layout_constraintStart_toEndOf="@+id/name_meal_item"
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
         app:srcCompat="@drawable/ic_baseline_delete_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
