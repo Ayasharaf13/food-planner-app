@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,14 +18,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.foodplanner.R;
 import com.example.foodplanner.models.RandomMeal;
-
+import com.example.foodplanner.search.view.MealCategoryFragment;
+import com.example.foodplanner.search.view.MealCategoryFragmentDirections;
 
 
 public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder> {
 
+    boolean isHome;
 
-    protected HomeAdapter() {
+   public HomeAdapter(boolean isHome) {
         super(new RandomMealDiffUtil ());
+
+        this.isHome =isHome;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -36,10 +42,10 @@ public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder>
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-           imageMeal = itemView.findViewById(R.id.img_meal_item);
+           imageMeal = itemView.findViewById(R.id.imgMealItem);
            imageSave = itemView.findViewById(R.id.img_save_item);
-           titleMeal = itemView.findViewById(R.id.name_meal_item);
-           watchBtn = itemView.findViewById(R.id.btn_watch_item);
+           titleMeal = itemView.findViewById(R.id.nameMealItem);
+           watchBtn = itemView.findViewById(R.id.btnWatchItem);
         }
     }
 
@@ -54,13 +60,50 @@ public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder>
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         RandomMeal currentObj = getItem(position);
         Glide.with(holder.itemView.getContext())
+
                 .load(currentObj.getStrMealThumb())
                 .override(300, 200)
                 .error(R.drawable.ic_launcher_background)
                 .into(holder.imageMeal);
 
 
+
       holder.titleMeal.setText(currentObj.getStrMeal());
+
+      holder.imageSave.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+
+              String id =  currentObj.getIdMeal();
+
+
+                  NavDirections action = HomeFragmentDirections.actionHomeFragmentToSaveFragment().setIdSavingFood(id);
+                  Navigation.findNavController(view).navigate(action);
+              }
+
+
+
+      });
+
+
+
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+
+
+          @Override
+          public void onClick(View view) {
+
+            String id = currentObj.getIdMeal();
+              if(isHome) {
+                  NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+                  Navigation.findNavController(view).navigate(action);
+              }else {
+                  NavDirections action = MealCategoryFragmentDirections.actionMealCategoryFragmentToDetailsMealFragment(id);
+                  Navigation.findNavController(view).navigate(action);
+              }
+          }
+      });
 
     }
 
