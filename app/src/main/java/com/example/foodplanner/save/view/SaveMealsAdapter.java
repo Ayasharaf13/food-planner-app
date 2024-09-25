@@ -26,16 +26,30 @@ import com.example.foodplanner.save.presenter.SavePresenterInterface;
 import java.util.List;
 
 public class SaveMealsAdapter extends ListAdapter<RandomMeal,SaveMealsAdapter.ViewHolder> {
+<<<<<<< HEAD
 
 
     InterfaceAdapter deleteClick  ;
+=======
+   /* SavePresenterInterface savePresenterInterface;
+    savePresenterInterface = new SavePresenter(
+            Repository.getInstance(FoodClient.getInstance(),ConcreteLocalSource.getInstance(requireContext()))
+            , this);
+
+    */
+
+    InterfaceAdapter deleteClick  = (id) -> {};
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
 
 
 
     protected SaveMealsAdapter( InterfaceAdapter delete) {
         super(new SaveMealsAdapter.SaveMealsDiffUtil());
+<<<<<<< HEAD
 
         this.deleteClick =delete;
+=======
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
     }
 
 

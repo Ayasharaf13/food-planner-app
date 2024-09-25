@@ -47,6 +47,7 @@ public class Repository implements  RepositoryInterface{
         remoteSource.makeApiCall(call,networkDelegate);
     }
 
+<<<<<<< HEAD
     @Override
     public void getCategories(Call<ResponseCategory> call,  NetworkDelegateCategory networkDelegate) {
         remoteSource.makeApiCallCategory(call,networkDelegate);
@@ -62,20 +63,45 @@ public class Repository implements  RepositoryInterface{
     @Override
     public void  saveMeal(List<RandomMeal> meal) {
       localSource.saveMeal(meal);
+=======
+<<<<<<< HEAD
+    @Override
+    public void  saveMeal(List<RandomMeal> meal) {
+      localSource.saveMeal(meal);
+=======
+<<<<<<< HEAD
+    @Override
+    public void saveMeal(RandomMeal meal) {
+        localSource.saveMeal(meal);
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
 
     }
 
     @Override
+<<<<<<< HEAD
     public void deleteMeal(List<RandomMeal> meal) {
+=======
+<<<<<<< HEAD
+    public void deleteMeal(List<RandomMeal> meal) {
+=======
+    public void deleteMeal(RandomMeal meal) {
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
         localSource.deleteMeal(meal);
 
     }
 
     @Override
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
     public LiveData<List<RandomMeal>> getAllMealFromStorage() {
      return localSource.getAllSavedData();
     }
 
+<<<<<<< HEAD
     @Override
     public LiveData<List<RandomMeal>>  searchById(String id) {
 
@@ -83,6 +109,16 @@ public class Repository implements  RepositoryInterface{
 
     }
 
+=======
+=======
+    public void getAllMealFromStorage() {
+      localSource.getAllSavedData();
+    }
+
+=======
+>>>>>>> a9e1adc143fdd02927f2d841ceff456f59aad7bd
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
 
 }
 

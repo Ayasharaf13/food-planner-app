@@ -6,7 +6,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.LiveData;
+<<<<<<< HEAD
 import androidx.lifecycle.Observer;
+=======
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -25,7 +28,13 @@ import com.example.foodplanner.network.FoodClient;
 import com.example.foodplanner.save.presenter.SavePresenter;
 import com.example.foodplanner.save.presenter.SavePresenterInterface;
 
+<<<<<<< HEAD
 import java.util.List;
+=======
+<<<<<<< HEAD
+import java.util.List;
+import java.util.Observer;
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
 
 public class SaveFragment extends Fragment implements SaveViewInterface {
 
@@ -33,8 +42,19 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
    RecyclerView saveRecyclerView;
    SavePresenterInterface savePresenterInterface;
    String idMealSave;
+<<<<<<< HEAD
 
 
+=======
+
+
+=======
+public class SaveFragment extends Fragment {
+
+
+
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
 
     public SaveFragment() {
         // Required empty public constructor
@@ -52,8 +72,12 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
 
                     savePresenterInterface = new SavePresenter(
                     Repository.getInstance(FoodClient.getInstance(),ConcreteLocalSource.getInstance(requireContext()))
@@ -61,6 +85,7 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
 
 
                      InterfaceAdapter deleteClick  = (id) -> {
+<<<<<<< HEAD
                          LiveData<List<RandomMeal>> meal = savePresenterInterface.searchById(id);
                          meal.observe(this, new Observer<List<RandomMeal>>() {
                              @Override
@@ -69,11 +94,23 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
                              }
                          });
 
+=======
+                      //    savePresenterInterface.getMealsByID(id);
+                         // savePresenterInterface.delete();
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
 
                      };
 
                     saveMealsAdapter = new SaveMealsAdapter(deleteClick);
 
+<<<<<<< HEAD
+=======
+=======
+        if (getArguments() != null) {
+
+        }
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
     }
 
     @Override
@@ -96,15 +133,26 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
 
 
 
+<<<<<<< HEAD
         // Retrieve the argument using Safe Args
         if (getArguments() != null) {
 
             SaveFragmentArgs args = SaveFragmentArgs.fromBundle(getArguments());
 
+=======
+
+
+
+// Retrieve the argument using Safe Args
+        if (getArguments() != null) {
+
+            SaveFragmentArgs args = SaveFragmentArgs.fromBundle(getArguments());
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
             idMealSave = args.getIdSavingFood();
             savePresenterInterface.getMealsByID(idMealSave);
             Log.i("idmeal", idMealSave);
 
+<<<<<<< HEAD
             //   DetailsMealFragmentArgs args = DetailsMealFragmentArgs.fromBundle(getArguments());
             //  idMealSave = args.getIdMeal();
 
@@ -113,6 +161,13 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
 
 
 
+=======
+         //   DetailsMealFragmentArgs args = DetailsMealFragmentArgs.fromBundle(getArguments());
+          //  idMealSave = args.getIdMeal();
+
+           // detailsPresenter.getMealsByID(idMeal);
+        }
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
     }
 
     @Override
