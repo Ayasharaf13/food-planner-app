@@ -24,6 +24,7 @@ import com.example.foodplanner.models.Category;
 import com.example.foodplanner.models.RandomMeal;
 import com.example.foodplanner.save.view.SaveMealsAdapter;
 
+<<<<<<< HEAD
 public class CategoryAdapter  extends ListAdapter<Category,CategoryAdapter.ViewHolder> {
 
   //   BindDataAdapter bindDataAdapter ;
@@ -32,6 +33,13 @@ public class CategoryAdapter  extends ListAdapter<Category,CategoryAdapter.ViewH
         super(new CategoryAdapter.CategoryDiffUtil());
 
          //  this.bindDataAdapter = bindDataAdapter;
+=======
+public class CategoryAdapter extends ListAdapter<Category,CategoryAdapter.ViewHolder> {
+
+
+    protected CategoryAdapter() {
+        super(new CategoryAdapter.CategoryDiffUtil());
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -55,17 +63,25 @@ public class CategoryAdapter  extends ListAdapter<Category,CategoryAdapter.ViewH
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.categoryitem, parent, false);
         return new CategoryAdapter.ViewHolder(view);
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+<<<<<<< HEAD
         Category currentObj = getItem(position);
 
      //  bindDataAdapter.OnBind(holder,currentObj);
 
 
+=======
+
+       Category currentObj = getItem(position);
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
         Glide.with(holder.itemView.getContext())
 
                 .load(currentObj.getStrCategoryThumb())
@@ -76,7 +92,10 @@ public class CategoryAdapter  extends ListAdapter<Category,CategoryAdapter.ViewH
         holder.titleCategory.setText(currentObj.getStrCategory());
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
         holder.imageCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -95,6 +114,7 @@ public class CategoryAdapter  extends ListAdapter<Category,CategoryAdapter.ViewH
     }
 
 
+<<<<<<< HEAD
     static class CategoryDiffUtil  extends DiffUtil.ItemCallback<Category> {
 
         @Override
@@ -102,11 +122,22 @@ public class CategoryAdapter  extends ListAdapter<Category,CategoryAdapter.ViewH
 
             return oldItem == newItem;
 
+=======
+    static class CategoryDiffUtil extends DiffUtil.ItemCallback<Category> {
+
+        @Override
+        public boolean areItemsTheSame(@NonNull Category oldItem, @NonNull Category newItem) {
+            return oldItem == newItem;
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
         }
 
         @SuppressLint("DiffUtilEquals")
         @Override
+<<<<<<< HEAD
         public boolean areContentsTheSame(@NonNull Category oldItem, @NonNull  Category newItem) {
+=======
+        public boolean areContentsTheSame(@NonNull Category oldItem, @NonNull Category newItem) {
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
             return oldItem.equals(newItem);
         }
     }

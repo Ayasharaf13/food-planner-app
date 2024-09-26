@@ -109,6 +109,7 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
         webView = view.findViewById(R.id.webview);
       //  saveDetails = view.findViewById(R.id.savedetails);
 
+<<<<<<< HEAD
         OnBindData bindData = (holder,currentObj)->{
              String currentItem = (String) currentObj;
               Log.i("testadapter",currentItem );
@@ -124,6 +125,9 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
         };
 
           ingredientsAdapter = new IngredientsAdapter(bindData);
+=======
+          ingredientsAdapter = new IngredientsAdapter();
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
 
 
         // Toolbar setup
@@ -187,6 +191,11 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
         listOfIngredients.add(mealDetails.getStrIngredient9());
         listOfIngredients.add(mealDetails.getStrIngredient10());
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
 
         //recyclerIngredients.setLayoutManager(new LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false));

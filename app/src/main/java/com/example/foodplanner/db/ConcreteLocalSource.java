@@ -40,9 +40,51 @@ public static synchronized  ConcreteLocalSource getInstance(Context context){
     public LiveData< List<RandomMeal>> getAllSavedData() {
     savelist = mealDao.getAllMealsSaved();
     return savelist;
+<<<<<<< HEAD
     }
 
     @Override
+=======
+<<<<<<< HEAD
+=======
+    }
+
+    @Override
+<<<<<<< HEAD
+    public void saveMeal(List<RandomMeal> meal) {
+=======
+    public void saveMeal(RandomMeal meal) {
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
+
+       new Thread(new Runnable() {
+           @Override
+           public void run() {
+
+               mealDao.insertMeal(meal);
+           }
+       }).start();
+
+    }
+
+    @Override
+<<<<<<< HEAD
+    public void deleteMeal(List<RandomMeal> meal) {
+=======
+    public void deleteMeal(RandomMeal meal) {
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                mealDao.deleteMeal(meal);
+            }
+        }).start();
+
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
+    }
+
+    @Override
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
     public void saveMeal(List<RandomMeal> meal) {
 
        new Thread(new Runnable() {

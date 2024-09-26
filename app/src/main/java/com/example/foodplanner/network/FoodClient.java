@@ -6,11 +6,17 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 
 import com.example.foodplanner.models.Category;
+<<<<<<< HEAD
 import com.example.foodplanner.models.Ingredients;
 import com.example.foodplanner.models.MyResponseForRandomMeal;
 import com.example.foodplanner.models.RandomMeal;
 import com.example.foodplanner.models.ResponseCategory;
 import com.example.foodplanner.models.ResponseIngredients;
+=======
+import com.example.foodplanner.models.MyResponseForRandomMeal;
+import com.example.foodplanner.models.RandomMeal;
+import com.example.foodplanner.models.ResponseCategory;
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
 
 import java.util.ArrayList;
 
@@ -77,6 +83,37 @@ public class FoodClient implements RemoteSource {
         }
     });
 
+<<<<<<< HEAD
+=======
+
+    }
+
+
+
+    @Override
+    public void makeApiCallCategory(Call<ResponseCategory> call,  NetworkDelegateCategory networkDelegate) {
+
+        call.enqueue(new Callback<ResponseCategory>() {
+            @Override
+            public void onResponse(@NonNull Call<ResponseCategory> call, @NonNull Response<ResponseCategory> response) {
+                ResponseCategory   responseBody = response.body();
+
+                if(response.isSuccessful() && responseBody !=null){
+                    ArrayList<Category> categories =responseBody.categories;
+                    networkDelegate.OnSuccessResultCategory(categories);
+                }else {
+                    Log.i("FoodPlanner", "Response failed: Category " + response.message());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseCategory> call, Throwable t) {
+
+                Log.e("FoodPlanner", "Request failed Category", t);
+            }
+        });
+
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
 
     }
 

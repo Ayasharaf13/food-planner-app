@@ -1,6 +1,7 @@
 package com.example.foodplanner.home.view;
 
 import android.annotation.SuppressLint;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,6 +70,114 @@ public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder>
 
 
       holder.titleMeal.setText(currentObj.getStrMeal());
+      holder.imageSave.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+
+              String id =  currentObj.getIdMeal();
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToSaveFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+
+          }
+
+      });
+
+
+
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+
+
+          @Override
+          public void onClick(View view) {
+
+            String id = currentObj.getIdMeal();
+
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+          }
+      });
+
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+
+
+          @Override
+          public void onClick(View view) {
+
+            String id = currentObj.getIdMeal();
+
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+          }
+      });
+
+      holder.imageSave.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+
+              String id =  currentObj.getIdMeal();
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToSaveFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+
+          }
+
+      });
+
+
+
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+
+
+          @Override
+          public void onClick(View view) {
+
+            String id = currentObj.getIdMeal();
+
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+          }
+      });
+
+      holder.imageSave.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+
+              String id =  currentObj.getIdMeal();
+
+
+                  NavDirections action = HomeFragmentDirections.actionHomeFragmentToSaveFragment().setIdSavingFood(id);
+                  Navigation.findNavController(view).navigate(action);
+              }
+
+
+
+      });
+
+
+
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+
+
+          @Override
+          public void onClick(View view) {
+
+            String id = currentObj.getIdMeal();
+              if(isHome) {
+                  NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+                  Navigation.findNavController(view).navigate(action);
+              }else {
+                  NavDirections action = MealCategoryFragmentDirections.actionMealCategoryFragmentToDetailsMealFragment(id);
+                  Navigation.findNavController(view).navigate(action);
+              }
+          }
+      });
 
       holder.imageSave.setOnClickListener(new View.OnClickListener() {
           @Override
