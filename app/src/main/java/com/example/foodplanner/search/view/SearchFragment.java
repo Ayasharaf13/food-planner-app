@@ -2,48 +2,58 @@ package com.example.foodplanner.search.view;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.bumptech.glide.Glide;
 import com.example.foodplanner.R;
+import com.example.foodplanner.db.ConcreteLocalSource;
+import com.example.foodplanner.detailsmeals.view.IngredientsAdapter;
+import com.example.foodplanner.detailsmeals.view.OnBindData;
+import com.example.foodplanner.models.Category;
+import com.example.foodplanner.models.Ingredients;
+import com.example.foodplanner.models.RandomMeal;
+import com.example.foodplanner.models.Repository;
+import com.example.foodplanner.network.FoodClient;
+import com.example.foodplanner.search.presenter.SearchPresenter;
+import com.example.foodplanner.search.presenter.SearchPresenterInterface;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link SearchFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class SearchFragment extends Fragment {
+import java.util.Collections;
+import java.util.List;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+public class SearchFragment extends Fragment  implements SearchViewInterface {
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+
+  CategoryAdapter categoryAdapter;
+  IngredientsAdapter ingredientsAdapter;
+  RecyclerView recyclerViewCategory;
+  SearchPresenterInterface searchPresenter;
+  RecyclerView recyclerViewIngredients;
+
+  Category category;
+
 
     public SearchFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment SearchFragment.
-     */
+
     // TODO: Rename and change types and number of parameters
     public static SearchFragment newInstance(String param1, String param2) {
         SearchFragment fragment = new SearchFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+
         fragment.setArguments(args);
         return fragment;
     }
@@ -51,10 +61,57 @@ public class SearchFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
+        searchPresenter = new SearchPresenter(Repository.getInstance(FoodClient.getInstance(),
+                ConcreteLocalSource.getInstance(requireContext())),this);
+
+        /*   BindDataAdapter bindDataAdapter = (holder,currentObj )-> {
+           Ingredients currentObj1 = (Ingredients) currentObj;
+               Glide.with(holder.itemView.getContext())
+                    .load("https://www.themealdb.com/images/ingredients/"+currentObj1+".png")
+                    .override(300, 200)
+                    .error(R.drawable.ic_launcher_background)
+                    .into(holder.imageCategory);
+
+            holder.titleCategory.setText(currentObj1.strIngredient);
+            holder.imageCategory.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+
+                   String id = currentObj1.strCategory;
+                    Log.i("mealcategorysend", id);
+
+                    NavDirections action = SearchFragmentDirections.actionSearchFragmentToMealCategoryFragment().setIdCategory(id);
+                    Navigation.findNavController(view).navigate(action);
+
+                }
+            });
+
+
+        };
+
+         */
+        OnBindData bindData = (holder, currentObj)->{
+            Ingredients currentItem = (Ingredients) currentObj;
+
+          //  Log.i("testadapter",currentItem );
+            Glide.with(holder.itemView.getContext())
+                    .load("https://www.themealdb.com/images/ingredients/"+((Ingredients) currentObj).strIngredient+".png")
+                    .override(300, 200)
+                    .error(R.drawable.ic_launcher_background)
+                    .into(holder.imageMeal);
+                holder.titleMeal.setText(currentItem.strIngredient);
+
+        };
+
+         categoryAdapter = new CategoryAdapter();
+        ingredientsAdapter  = new IngredientsAdapter(bindData);
+
+        searchPresenter.getCategories();
+        searchPresenter.getIngredients();
+
+
     }
 
     @Override
@@ -63,4 +120,45 @@ public class SearchFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_search, container, false);
     }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        recyclerViewCategory = view.findViewById(R.id.recyclerCategory);
+        recyclerViewIngredients = view.findViewById(R.id.recyclerIngrediance);
+
+        GridLayoutManager layoutManager=new GridLayoutManager(requireContext(),2);
+        LinearLayoutManager layoutManagerHorizontal = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+
+        recyclerViewCategory.setLayoutManager(layoutManager);
+        recyclerViewIngredients.setLayoutManager(layoutManagerHorizontal);
+
+
+
+
+
+    }
+
+    @Override
+    public void showCategory(List<Category> categoryList) {
+
+
+        categoryAdapter.submitList(categoryList);
+        recyclerViewCategory.setAdapter(categoryAdapter);
+
+    }
+
+    @Override
+    public void showIngredients(List<Ingredients> meals) {
+
+      String mealslist=    meals.toString();
+      ingredientsAdapter.submitList(meals);
+       // ingredientsAdapter.submitList(Collections.singletonList(mealslist));
+      //   categoryAdapter.submitList(meals);
+       recyclerViewIngredients.setAdapter(ingredientsAdapter);
+
+    }
+
+
+
 }

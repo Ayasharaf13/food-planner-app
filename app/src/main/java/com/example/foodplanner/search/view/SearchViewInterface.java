@@ -1,4 +1,13 @@
 package com.example.foodplanner.search.view;
 
+import com.example.foodplanner.models.Category;
+import com.example.foodplanner.models.Ingredients;
+import com.example.foodplanner.models.RandomMeal;
+
+import java.util.List;
+
 public interface SearchViewInterface {
+
+    void showCategory(List<Category> categoryList);
+    void showIngredients(List<Ingredients> meals);
 }

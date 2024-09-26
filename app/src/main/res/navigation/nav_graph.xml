@@ -12,21 +12,56 @@
         <action
             android:id="@+id/action_homeFragment_to_detailsMealFragment"
             app:destination="@id/detailsMealFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_saveFragment"
+            app:destination="@id/saveFragment" />
+
+
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.example.foodplanner.search.view.SearchFragment"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_mealCategoryFragment"
+            app:destination="@id/mealCategoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/saveFragment"
         android:name="com.example.foodplanner.save.view.SaveFragment"
-        android:label="fragment_save"
-        tools:layout="@layout/fragment_save" />
+        tools:layout="@layout/fragment_save" >
+        <argument
+            android:name="idSavingFood"
+            android:defaultValue="52772"
+            app:argType="string" />
+
+    </fragment>
     <fragment
         android:id="@+id/plannerFragment"
         android:name="com.example.foodplanner.planner.view.PlannerFragment"
         tools:layout="@layout/fragment_planner" />
     <fragment
         android:id="@+id/detailsMealFragment"
-        android:name="com.example.foodplanner.detailsmeals.view.DetailsMealFragment" />
+        android:name="com.example.foodplanner.detailsmeals.view.DetailsMealFragment"
+        tools:layout="@layout/fragment_details_meal">
+
+
+        <argument
+            android:name="idMeal"
+            app:argType="string"
+             />
+    </fragment>
+    <fragment
+        android:id="@+id/mealCategoryFragment"
+        android:name="com.example.foodplanner.search.view.MealCategoryFragment"
+        android:label="fragment_meal_category"
+        tools:layout="@layout/fragment_meal_category" >
+        <argument
+            android:name="idCategory"
+            android:defaultValue="Seafood"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_mealCategoryFragment_to_detailsMealFragment"
+            app:destination="@id/detailsMealFragment" />
+    </fragment>
 </navigation>
