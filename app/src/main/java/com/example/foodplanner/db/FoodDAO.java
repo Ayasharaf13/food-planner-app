@@ -33,6 +33,29 @@ public interface FoodDAO {
 
     @Delete
     void deleteMeal (List<RandomMeal>  meal);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+    @Query("SELECT * FROM Meals_table")
+    LiveData<List<RandomMeal>> getAllMealsSaved ();
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @NotNull
+<<<<<<< HEAD
+    void  insertMeal(List<RandomMeal> meal);
+
+    @Delete
+    void deleteMeal (List<RandomMeal>  meal);
+=======
+    Long insertMeal(RandomMeal meals);
+
+    @Delete
+    void deleteMeal (RandomMeal   meals);
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
 
 
 }

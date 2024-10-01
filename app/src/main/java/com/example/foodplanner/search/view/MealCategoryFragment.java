@@ -52,7 +52,11 @@ public class MealCategoryFragment extends Fragment  implements MealCategoryView{
 
         mealCategoryPresenter = new MealCategoryPresenter(Repository.getInstance(FoodClient.getInstance(),
                 ConcreteLocalSource.getInstance(requireContext())),this);
+<<<<<<< HEAD
            mealCategoryAdapter = new HomeAdapter("category");
+=======
+           mealCategoryAdapter = new HomeAdapter(false);
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
 
 
     }
@@ -83,6 +87,10 @@ public class MealCategoryFragment extends Fragment  implements MealCategoryView{
         recyclerViewMealCategory.setLayoutManager(layoutManager);
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
     }
 
     @Override

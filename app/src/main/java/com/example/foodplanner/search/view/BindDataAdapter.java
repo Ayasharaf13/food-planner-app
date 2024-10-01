@@ -1,7 +1,17 @@
 package com.example.foodplanner.search.view;
 
 
+<<<<<<< HEAD
 import androidx.annotation.NonNull;
+=======
+import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.foodplanner.detailsmeals.view.IngredientsAdapter;
+import com.example.foodplanner.home.view.HomeAdapter;
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
 
 public interface BindDataAdapter<T>  {
 

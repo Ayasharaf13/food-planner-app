@@ -10,6 +10,10 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+<<<<<<< HEAD
+=======
+import androidx.recyclerview.widget.GridLayoutManager;
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -27,10 +31,18 @@ import com.example.foodplanner.R;
 import com.example.foodplanner.db.ConcreteLocalSource;
 import com.example.foodplanner.detailsmeals.presenter.DetailsPresenter;
 import com.example.foodplanner.detailsmeals.presenter.DetailsPresenterInterface;
+<<<<<<< HEAD
+=======
+import com.example.foodplanner.models.Ingredients;
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
 import com.example.foodplanner.models.RandomMeal;
 import com.example.foodplanner.models.Repository;
 import com.example.foodplanner.network.FoodClient;
 
+<<<<<<< HEAD
+=======
+import java.lang.reflect.Method;
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
@@ -49,7 +61,11 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
     private String idMeal;
     private DetailsPresenterInterface detailsPresenter;
     private List <String>listOfIngredients =  new ArrayList<>();
+<<<<<<< HEAD
     private GenericAdapter<String> ingredientsAdapter;
+=======
+    private IngredientsAdapter ingredientsAdapter;
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
     private RecyclerView recyclerIngredients;
 
 
@@ -106,6 +122,10 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
         webView = view.findViewById(R.id.webview);
       //  saveDetails = view.findViewById(R.id.savedetails);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
         OnBindData bindData = (holder,currentObj)->{
              String currentItem = (String) currentObj;
               Log.i("testadapter",currentItem );
@@ -120,7 +140,14 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
 
         };
 
+<<<<<<< HEAD
           ingredientsAdapter = new GenericAdapter();
+=======
+          ingredientsAdapter = new IngredientsAdapter(bindData);
+=======
+          ingredientsAdapter = new IngredientsAdapter();
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
 
 
         // Toolbar setup
@@ -184,6 +211,14 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
         listOfIngredients.add(mealDetails.getStrIngredient9());
         listOfIngredients.add(mealDetails.getStrIngredient10());
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
 
         //recyclerIngredients.setLayoutManager(new LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false));
@@ -192,6 +227,10 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
         recyclerIngredients.setAdapter(ingredientsAdapter);
 
         webView.getSettings().setJavaScriptEnabled(true);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
         // WebViewClient allows you to handle
         // onPageFinished and override Url loading.
         webView.setWebViewClient(new WebViewClient());
