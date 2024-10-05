@@ -9,5 +9,12 @@ public interface NetworkDelegateCategory {
 
     void OnFailureResult ( String errorMass);
     void  OnSuccessResultCategory(List<Category> categoryList);
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
 }

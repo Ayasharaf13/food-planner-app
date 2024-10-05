@@ -96,7 +96,15 @@ public class HomeFragment extends Fragment implements HomeViewInterface {
                // = new LinearLayoutManager(requireContext(), GridLayoutManager.VERTICAL, false);
        // layoutManager = new LinearLayoutManager(requireActivity());
           recyclerView.setLayoutManager(layoutManager);
+<<<<<<< HEAD
         homeAdapter = new HomeAdapter("home");
+=======
+<<<<<<< HEAD
+        homeAdapter = new HomeAdapter("home");
+=======
+        homeAdapter = new HomeAdapter(true);
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
 
         txtTitleCard = view.findViewById(R.id.nameCardRandom);
         txtNewCard = view.findViewById(R.id.newTextCard);

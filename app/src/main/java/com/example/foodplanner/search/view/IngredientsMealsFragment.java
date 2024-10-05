@@ -90,6 +90,9 @@ public class IngredientsMealsFragment extends Fragment  implements IngredientsMe
           adapterIngredMeal.submitList(meals);
           recyclerIngredMeal.setAdapter(adapterIngredMeal);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
     }
 }

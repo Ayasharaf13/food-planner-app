@@ -6,13 +6,35 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 
 import com.example.foodplanner.models.Category;
+<<<<<<< HEAD
 import com.example.foodplanner.models.CountryNames;
+=======
+<<<<<<< HEAD
+import com.example.foodplanner.models.CountryNames;
+=======
+<<<<<<< HEAD
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
 import com.example.foodplanner.models.Ingredients;
 import com.example.foodplanner.models.MyResponseForRandomMeal;
 import com.example.foodplanner.models.RandomMeal;
 import com.example.foodplanner.models.ResponseCategory;
+<<<<<<< HEAD
 import com.example.foodplanner.models.ResponseCountry;
 import com.example.foodplanner.models.ResponseIngredients;
+=======
+<<<<<<< HEAD
+import com.example.foodplanner.models.ResponseCountry;
+import com.example.foodplanner.models.ResponseIngredients;
+=======
+import com.example.foodplanner.models.ResponseIngredients;
+=======
+import com.example.foodplanner.models.MyResponseForRandomMeal;
+import com.example.foodplanner.models.RandomMeal;
+import com.example.foodplanner.models.ResponseCategory;
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
 
 import java.util.ArrayList;
 
@@ -79,6 +101,14 @@ public class FoodClient implements RemoteSource {
         }
     });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
 
     }
 
@@ -107,6 +137,41 @@ public class FoodClient implements RemoteSource {
             }
         });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+
+    }
+
+
+
+    @Override
+    public void makeApiCallCategory(Call<ResponseCategory> call,  NetworkDelegateCategory networkDelegate) {
+
+        call.enqueue(new Callback<ResponseCategory>() {
+            @Override
+            public void onResponse(@NonNull Call<ResponseCategory> call, @NonNull Response<ResponseCategory> response) {
+                ResponseCategory   responseBody = response.body();
+
+                if(response.isSuccessful() && responseBody !=null){
+                    ArrayList<Category> categories =responseBody.categories;
+                    networkDelegate.OnSuccessResultCategory(categories);
+                }else {
+                    Log.i("FoodPlanner", "Response failed: Category " + response.message());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseCategory> call, Throwable t) {
+
+                Log.e("FoodPlanner", "Request failed Category", t);
+            }
+        });
+
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
 
     }
 
@@ -136,6 +201,10 @@ public class FoodClient implements RemoteSource {
 
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
     @Override
     public void makeApiCallCountry(Call<ResponseCountry> call, NetworkDelegateCountry networkDelegate) {
 
@@ -163,6 +232,11 @@ public class FoodClient implements RemoteSource {
 
     }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
 
 
 

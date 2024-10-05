@@ -1,6 +1,7 @@
 package com.example.foodplanner.home.view;
 
 import android.annotation.SuppressLint;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.foodplanner.R;
 import com.example.foodplanner.models.RandomMeal;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
 import com.example.foodplanner.search.view.IngredientsMealsFragment;
 import com.example.foodplanner.search.view.IngredientsMealsFragmentDirections;
 import com.example.foodplanner.search.view.MealCategoryFragment;
@@ -26,16 +31,38 @@ import com.example.foodplanner.search.view.MealCountryFragmentDirections;
 import com.example.foodplanner.search.view.SearchFragmentDirections;
 
 import java.util.Objects;
+<<<<<<< HEAD
+=======
+=======
+import com.example.foodplanner.search.view.MealCategoryFragment;
+import com.example.foodplanner.search.view.MealCategoryFragmentDirections;
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
 
 
 public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder> {
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
    String nav;
 
    public HomeAdapter(String nav) {
         super(new RandomMealDiffUtil ());
 
         this.nav =nav;
+<<<<<<< HEAD
+=======
+=======
+    boolean isHome;
+
+   public HomeAdapter(boolean isHome) {
+        super(new RandomMealDiffUtil ());
+
+        this.isHome =isHome;
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -72,7 +99,158 @@ public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder>
                 .error(R.drawable.ic_launcher_background)
                 .into(holder.imageMeal);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
       holder.titleMeal.setText(currentObj.getStrMeal());
+      holder.imageSave.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+
+              String id =  currentObj.getIdMeal();
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToSaveFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+
+          }
+
+      });
+
+
+
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+
+
+          @Override
+          public void onClick(View view) {
+
+            String id = currentObj.getIdMeal();
+
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+          }
+      });
+
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+
+
+          @Override
+          public void onClick(View view) {
+
+            String id = currentObj.getIdMeal();
+
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+          }
+      });
+
+      holder.imageSave.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+
+              String id =  currentObj.getIdMeal();
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToSaveFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+
+          }
+
+      });
+
+
+
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+
+
+          @Override
+          public void onClick(View view) {
+
+            String id = currentObj.getIdMeal();
+
+              NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+              Navigation.findNavController(view).navigate(action);
+
+          }
+      });
+
+      holder.imageSave.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+
+              String id =  currentObj.getIdMeal();
+
+
+                  NavDirections action = HomeFragmentDirections.actionHomeFragmentToSaveFragment().setIdSavingFood(id);
+                  Navigation.findNavController(view).navigate(action);
+              }
+
+
+
+      });
+
+
+
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+
+
+          @Override
+          public void onClick(View view) {
+
+            String id = currentObj.getIdMeal();
+              if(isHome) {
+                  NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+                  Navigation.findNavController(view).navigate(action);
+              }else {
+                  NavDirections action = MealCategoryFragmentDirections.actionMealCategoryFragmentToDetailsMealFragment(id);
+                  Navigation.findNavController(view).navigate(action);
+              }
+          }
+      });
+
+      holder.imageSave.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+
+              String id =  currentObj.getIdMeal();
+
+
+                  NavDirections action = HomeFragmentDirections.actionHomeFragmentToSaveFragment().setIdSavingFood(id);
+                  Navigation.findNavController(view).navigate(action);
+              }
+
+
+
+      });
+
+
+
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+
+
+          @Override
+          public void onClick(View view) {
+
+            String id = currentObj.getIdMeal();
+              if(isHome) {
+                  NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+                  Navigation.findNavController(view).navigate(action);
+              }else {
+                  NavDirections action = MealCategoryFragmentDirections.actionMealCategoryFragmentToDetailsMealFragment(id);
+                  Navigation.findNavController(view).navigate(action);
+              }
+          }
+      });
 
       holder.imageSave.setOnClickListener(new View.OnClickListener() {
           @Override
@@ -113,6 +291,48 @@ public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder>
           }
       });
 
+<<<<<<< HEAD
+      holder.imageSave.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+
+              String id =  currentObj.getIdMeal();
+
+
+                  NavDirections action = HomeFragmentDirections.actionHomeFragmentToSaveFragment().setIdSavingFood(id);
+                  Navigation.findNavController(view).navigate(action);
+              }
+
+
+
+      });
+
+
+      holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+            String id = currentObj.getIdMeal();
+              if(Objects.equals(nav, "home")) {
+                  NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+                  Navigation.findNavController(view).navigate(action);
+              }else if(Objects.equals(nav, "category")) {
+                  NavDirections action = MealCategoryFragmentDirections.actionMealCategoryFragmentToDetailsMealFragment(id);
+                  Navigation.findNavController(view).navigate(action);
+              }else if(nav.equals("mealCountry")){
+
+                  NavDirections action = MealCountryFragmentDirections.actionMealCountryFragmentToDetailsMealFragment(id);
+                  Navigation.findNavController(view).navigate(action);
+
+              }else if(nav.equals("mealIngred")){
+                  NavDirections action = IngredientsMealsFragmentDirections.actionIngredientsMealsFragmentToDetailsMealFragment(id);
+                  Navigation.findNavController(view).navigate(action);
+              }
+          }
+      });
+
+=======
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
     }
     static class RandomMealDiffUtil extends DiffUtil.ItemCallback<RandomMeal> {
 
