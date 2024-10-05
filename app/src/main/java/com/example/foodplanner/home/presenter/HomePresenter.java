@@ -3,6 +3,7 @@ package com.example.foodplanner.home.presenter;
 import android.util.Log;
 
 import com.example.foodplanner.home.view.HomeViewInterface;
+import com.example.foodplanner.models.Category;
 import com.example.foodplanner.models.RandomMeal;
 import com.example.foodplanner.models.RepositoryInterface;
 import com.example.foodplanner.network.FoodClient;
@@ -37,6 +38,7 @@ public class HomePresenter implements HomePresenterInterface , NetworkDelegate {
     public void OnFailureResult(String errorMass) {
          Log.i("OnFailuer",errorMass);
     }
+
 
     @Override
     public void getRandomMeals() {

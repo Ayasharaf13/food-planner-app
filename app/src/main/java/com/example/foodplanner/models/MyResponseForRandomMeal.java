@@ -8,4 +8,6 @@ public class MyResponseForRandomMeal {
     public ArrayList<RandomMeal> meals;
 
 
+
+
 }

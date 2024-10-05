@@ -1,5 +1,6 @@
 package com.example.foodplanner;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
@@ -9,11 +10,14 @@ import androidx.navigation.ui.NavigationUI;
 import android.database.Observable;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.foodplanner.models.RandomMeal;
 import com.example.foodplanner.network.FoodClient;
 import com.example.foodplanner.network.NetworkDelegate;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 import java.util.List;
 
@@ -26,8 +30,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+      /*  if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
 
+       */
         BottomNavigationView navView = findViewById(R.id.bottomNavigationView);
+
+        navView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                if(item.getItemId() == R.id.searchFragment){
+                    Toast.makeText(MainActivity.this,"Search",Toast.LENGTH_LONG).show();
+                  //  navController.navigate(item.getItemId());
+                }
+                return false;
+            }
+        });
 
         // Find the NavController
         NavHostFragment navHostFragment =
@@ -49,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     private void bottomNavItemChangeListener(BottomNavigationView navView) {
         navView.setOnItemSelectedListener(item -> {
             if (item.getItemId() != navView.getSelectedItemId()) {
@@ -60,4 +81,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 }

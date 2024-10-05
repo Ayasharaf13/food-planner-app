@@ -96,20 +96,14 @@ public class HomeFragment extends Fragment implements HomeViewInterface {
                // = new LinearLayoutManager(requireContext(), GridLayoutManager.VERTICAL, false);
        // layoutManager = new LinearLayoutManager(requireActivity());
           recyclerView.setLayoutManager(layoutManager);
-        homeAdapter = new HomeAdapter();
+        homeAdapter = new HomeAdapter("home");
 
         txtTitleCard = view.findViewById(R.id.nameCardRandom);
         txtNewCard = view.findViewById(R.id.newTextCard);
         btnregister= view.findViewById(R.id.btn_registration);
 
-        btnregister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                NavDirections action= HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment();
-                Navigation.findNavController(view).navigate(action);
-            }
-        });
+
     }
 
     @Override
