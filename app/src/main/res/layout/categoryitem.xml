@@ -5,11 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
     <ImageView
         android:id="@+id/imageCategory"
         android:layout_width="100dp"
         android:layout_height="86dp"
+<<<<<<< HEAD
+=======
+=======
+    <ImageView
+        android:id="@+id/imageCategory"
+        android:layout_width="124dp"
+        android:layout_height="137dp"
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toTopOf="@+id/nameCategory"
@@ -20,12 +33,31 @@
     <TextView
         android:id="@+id/nameCategory"
         android:layout_width="95dp"
+<<<<<<< HEAD
         android:layout_height="24dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="2dp"
+=======
+<<<<<<< HEAD
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+=======
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="3dp"
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
         android:gravity="center"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageCategory" />
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 </androidx.constraintlayout.widget.ConstraintLayout>

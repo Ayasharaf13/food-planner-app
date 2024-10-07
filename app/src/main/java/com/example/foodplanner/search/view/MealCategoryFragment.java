@@ -8,13 +8,19 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+<<<<<<< HEAD
 import android.text.Editable;
 import android.text.TextWatcher;
+=======
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 import android.widget.EditText;
+=======
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
 import com.example.foodplanner.R;
 import com.example.foodplanner.db.ConcreteLocalSource;
@@ -25,19 +31,29 @@ import com.example.foodplanner.models.Repository;
 import com.example.foodplanner.network.FoodClient;
 import com.example.foodplanner.search.presenter.MealCategoryPresenter;
 import com.example.foodplanner.search.presenter.MealCategoryPresenterInterface;
+<<<<<<< HEAD
 import com.example.foodplanner.search.presenter.SearchResultPresenter;
 
 import java.util.List;
 
 public class MealCategoryFragment extends Fragment  implements MealCategoryView ,SearchResultView{
+=======
+
+import java.util.List;
+
+public class MealCategoryFragment extends Fragment  implements MealCategoryView{
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
  String idMealCategory;
  RecyclerView recyclerViewMealCategory;
  MealCategoryPresenterInterface mealCategoryPresenter;
  HomeAdapter mealCategoryAdapter;
+<<<<<<< HEAD
  EditText searchViewCategory;
 
  SearchResultPresenter searchResultPresenter;
+=======
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
 
     public MealCategoryFragment() {
@@ -59,10 +75,23 @@ public class MealCategoryFragment extends Fragment  implements MealCategoryView 
 
         mealCategoryPresenter = new MealCategoryPresenter(Repository.getInstance(FoodClient.getInstance(),
                 ConcreteLocalSource.getInstance(requireContext())),this);
+<<<<<<< HEAD
            mealCategoryAdapter = new HomeAdapter("category");
 
         searchResultPresenter = new SearchResultPresenter(Repository.getInstance(FoodClient.getInstance(),
                 ConcreteLocalSource.getInstance(requireContext())),this);
+=======
+<<<<<<< HEAD
+           mealCategoryAdapter = new HomeAdapter("category");
+=======
+<<<<<<< HEAD
+           mealCategoryAdapter = new HomeAdapter("category");
+=======
+           mealCategoryAdapter = new HomeAdapter(false);
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
     }
 
@@ -91,6 +120,7 @@ public class MealCategoryFragment extends Fragment  implements MealCategoryView 
 
         recyclerViewMealCategory.setLayoutManager(layoutManager);
 
+<<<<<<< HEAD
         searchViewCategory=view.findViewById(R.id.searchTextCategory);
 
         searchViewCategory.addTextChangedListener(new TextWatcher() {
@@ -114,6 +144,16 @@ public class MealCategoryFragment extends Fragment  implements MealCategoryView 
         });
 
 
+=======
+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
     }
 
     @Override
@@ -123,6 +163,7 @@ public class MealCategoryFragment extends Fragment  implements MealCategoryView 
         recyclerViewMealCategory.setAdapter(mealCategoryAdapter);
 
     }
+<<<<<<< HEAD
 
     @Override
     public void showMealsBySearch(List<RandomMeal> meals) {
@@ -131,4 +172,6 @@ public class MealCategoryFragment extends Fragment  implements MealCategoryView 
         recyclerViewMealCategory.setAdapter(mealCategoryAdapter);
 
     }
+=======
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 }

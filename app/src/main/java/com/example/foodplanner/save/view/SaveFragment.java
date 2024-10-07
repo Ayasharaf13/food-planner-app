@@ -6,7 +6,26 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.LiveData;
+<<<<<<< HEAD
 import androidx.lifecycle.Observer;
+=======
+<<<<<<< HEAD
+import androidx.lifecycle.Observer;
+=======
+<<<<<<< HEAD
+import androidx.lifecycle.Observer;
+=======
+<<<<<<< HEAD
+import androidx.lifecycle.Observer;
+=======
+<<<<<<< HEAD
+import androidx.lifecycle.Observer;
+=======
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -25,7 +44,29 @@ import com.example.foodplanner.network.FoodClient;
 import com.example.foodplanner.save.presenter.SavePresenter;
 import com.example.foodplanner.save.presenter.SavePresenterInterface;
 
+<<<<<<< HEAD
 import java.util.List;
+=======
+<<<<<<< HEAD
+import java.util.List;
+=======
+<<<<<<< HEAD
+import java.util.List;
+=======
+<<<<<<< HEAD
+import java.util.List;
+=======
+<<<<<<< HEAD
+import java.util.List;
+=======
+<<<<<<< HEAD
+import java.util.List;
+import java.util.Observer;
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
 public class SaveFragment extends Fragment implements SaveViewInterface {
 
@@ -33,8 +74,39 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
    RecyclerView saveRecyclerView;
    SavePresenterInterface savePresenterInterface;
    String idMealSave;
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+
+
+=======
+<<<<<<< HEAD
+
+
+=======
+<<<<<<< HEAD
+
+
+=======
+<<<<<<< HEAD
+
+
+=======
+
+
+=======
+public class SaveFragment extends Fragment {
+
+
+
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
     public SaveFragment() {
         // Required empty public constructor
@@ -52,8 +124,32 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+
+
+=======
+<<<<<<< HEAD
+
+
+=======
+<<<<<<< HEAD
+
+
+=======
+<<<<<<< HEAD
+
+
+=======
+<<<<<<< HEAD
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
                     savePresenterInterface = new SavePresenter(
                     Repository.getInstance(FoodClient.getInstance(),ConcreteLocalSource.getInstance(requireContext()))
@@ -61,6 +157,19 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
 
 
                      InterfaceAdapter deleteClick  = (id) -> {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
                          LiveData<List<RandomMeal>> meal = savePresenterInterface.searchById(id);
                          meal.observe(this, new Observer<List<RandomMeal>>() {
                              @Override
@@ -69,11 +178,47 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
                              }
                          });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+                      //    savePresenterInterface.getMealsByID(id);
+                         // savePresenterInterface.delete();
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
                      };
 
                     saveMealsAdapter = new SaveMealsAdapter(deleteClick);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+        if (getArguments() != null) {
+
+        }
+>>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
     }
 
     @Override
@@ -96,15 +241,62 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
         // Retrieve the argument using Safe Args
         if (getArguments() != null) {
 
             SaveFragmentArgs args = SaveFragmentArgs.fromBundle(getArguments());
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+
+
+// Retrieve the argument using Safe Args
+        if (getArguments() != null) {
+
+            SaveFragmentArgs args = SaveFragmentArgs.fromBundle(getArguments());
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
             idMealSave = args.getIdSavingFood();
             savePresenterInterface.getMealsByID(idMealSave);
             Log.i("idmeal", idMealSave);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
             //   DetailsMealFragmentArgs args = DetailsMealFragmentArgs.fromBundle(getArguments());
             //  idMealSave = args.getIdMeal();
 
@@ -113,6 +305,25 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+         //   DetailsMealFragmentArgs args = DetailsMealFragmentArgs.fromBundle(getArguments());
+          //  idMealSave = args.getIdMeal();
+
+           // detailsPresenter.getMealsByID(idMeal);
+        }
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
     }
 
     @Override

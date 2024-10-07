@@ -3,8 +3,25 @@ package com.example.foodplanner.network;
 import com.example.foodplanner.models.CountryNames;
 import com.example.foodplanner.models.MyResponseForRandomMeal;
 import com.example.foodplanner.models.ResponseCategory;
+<<<<<<< HEAD
 import com.example.foodplanner.models.ResponseCountry;
 import com.example.foodplanner.models.ResponseIngredients;
+=======
+<<<<<<< HEAD
+import com.example.foodplanner.models.ResponseCountry;
+import com.example.foodplanner.models.ResponseIngredients;
+=======
+<<<<<<< HEAD
+import com.example.foodplanner.models.ResponseCountry;
+import com.example.foodplanner.models.ResponseIngredients;
+=======
+<<<<<<< HEAD
+import com.example.foodplanner.models.ResponseIngredients;
+=======
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -18,6 +35,19 @@ public interface FoodService {
      Call<MyResponseForRandomMeal> getRandomMeals ();
 
     @GET("api/json/v1/1/search.php")
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
    Call<MyResponseForRandomMeal> getSuggestionMeals(@Query("f") String  letter );
     @GET("api/json/v1/1/lookup.php")
    Call<MyResponseForRandomMeal> getMealsById(@Query("i") String  letter );
@@ -28,10 +58,27 @@ public interface FoodService {
 
     @GET("api/json/v1/1/filter.php")
     Call <MyResponseForRandomMeal> getMealsByCategory(@Query("c") String category);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
 
     @GET("api/json/v1/1/list.php?i=list")
     Call <ResponseIngredients> getMealsByIngredients ();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
 
     @GET ("api/json/v1/1/list.php?a=list")
@@ -46,11 +93,28 @@ public interface FoodService {
 
     @GET ("api/json/v1/1/filter.php")
     Call <MyResponseForRandomMeal> getMealsByIngredients (@Query("i") String mealName);
+<<<<<<< HEAD
 
     //www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
 
     @GET("api/json/v1/1/search.php")
     Call <MyResponseForRandomMeal> getMealsBySearch(@Query("s") String mealName);
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+=======
+    public Call<MyResponseForRandomMeal> getSuggestionMeals(@Query("f") String  letter );
+    @GET("api/json/v1/1/lookup.php")
+    public Call<MyResponseForRandomMeal> getMealsById(@Query("i") String  letter );
+>>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
+>>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
+
+    
+>>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
+>>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
 
 

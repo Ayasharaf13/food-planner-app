@@ -8,12 +8,18 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+<<<<<<< HEAD
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+=======
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
 import com.example.foodplanner.R;
 import com.example.foodplanner.db.ConcreteLocalSource;
@@ -23,18 +29,28 @@ import com.example.foodplanner.models.Repository;
 import com.example.foodplanner.network.FoodClient;
 import com.example.foodplanner.search.presenter.MealCountryInterface;
 import com.example.foodplanner.search.presenter.MealCountryPresenter;
+<<<<<<< HEAD
 import com.example.foodplanner.search.presenter.SearchResultPresenter;
 
 import java.util.List;
 
 public class MealCountryFragment extends Fragment  implements CountryMealView,SearchResultView{
+=======
+
+import java.util.List;
+
+public class MealCountryFragment extends Fragment  implements CountryMealView{
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
   RecyclerView recyclerMealCountry;
  HomeAdapter  adapterCountryMeal;
   String nameCountry;
   MealCountryInterface mealCountryPresenter;
+<<<<<<< HEAD
   EditText searchViewCountry;
   SearchResultPresenter searchResultPresenter;
+=======
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
 
     public MealCountryFragment() {
@@ -56,10 +72,13 @@ public class MealCountryFragment extends Fragment  implements CountryMealView,Se
        mealCountryPresenter = new MealCountryPresenter(Repository.getInstance(FoodClient.getInstance(),
                ConcreteLocalSource.getInstance(requireContext())),this);
         adapterCountryMeal = new HomeAdapter("mealCountry");
+<<<<<<< HEAD
 
 
         searchResultPresenter = new SearchResultPresenter(Repository.getInstance(FoodClient.getInstance(),
                 ConcreteLocalSource.getInstance(requireContext())),this);
+=======
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
     }
 
     @Override
@@ -85,6 +104,7 @@ public class MealCountryFragment extends Fragment  implements CountryMealView,Se
 
           mealCountryPresenter.getCountryMeal(nameCountry);
 
+<<<<<<< HEAD
           searchViewCountry = view.findViewById(R.id.searchTextCountry);
 
           searchViewCountry.addTextChangedListener(new TextWatcher() {
@@ -106,6 +126,8 @@ public class MealCountryFragment extends Fragment  implements CountryMealView,Se
               }
           });
 
+=======
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
         }
     }
 
@@ -119,6 +141,7 @@ public class MealCountryFragment extends Fragment  implements CountryMealView,Se
     }
 
 
+<<<<<<< HEAD
     @Override
     public void showMealsBySearch(List<RandomMeal> meals) {
 
@@ -126,4 +149,6 @@ public class MealCountryFragment extends Fragment  implements CountryMealView,Se
         adapterCountryMeal.submitList(meals);
         recyclerMealCountry.setAdapter(adapterCountryMeal);
     }
+=======
+>>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 }
