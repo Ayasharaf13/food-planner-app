@@ -5,8 +5,14 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
+import com.example.foodplanner.models.Category;
+import com.example.foodplanner.models.CountryNames;
+import com.example.foodplanner.models.Ingredients;
 import com.example.foodplanner.models.MyResponseForRandomMeal;
 import com.example.foodplanner.models.RandomMeal;
+import com.example.foodplanner.models.ResponseCategory;
+import com.example.foodplanner.models.ResponseCountry;
+import com.example.foodplanner.models.ResponseIngredients;
 
 import java.util.ArrayList;
 
@@ -45,8 +51,15 @@ public class FoodClient implements RemoteSource {
 
     }
 
+
+
+
+
+
+
+
     @Override
-    public void makeApiCall(Call<MyResponseForRandomMeal> call, NetworkDelegate networkDelegate) {
+   public void makeApiCall(Call<MyResponseForRandomMeal> call, NetworkDelegate networkDelegate) {
 
          call.enqueue(new Callback<MyResponseForRandomMeal>() {
         @Override
@@ -65,10 +78,92 @@ public class FoodClient implements RemoteSource {
             Log.e("FoodPlanner", "Request failed", t);
         }
     });
-        //makeApiCall(getApiService().getRandomMeals(), networkDelegate);
-       // makeApiCall(getApiService().getSuggestionMeals("s"), networkDelegate);
+
 
     }
+
+
+
+    @Override
+    public void makeApiCallCategory(Call<ResponseCategory> call,  NetworkDelegateCategory networkDelegate) {
+
+        call.enqueue(new Callback<ResponseCategory>() {
+            @Override
+            public void onResponse(@NonNull Call<ResponseCategory> call, @NonNull Response<ResponseCategory> response) {
+                ResponseCategory   responseBody = response.body();
+
+                if(response.isSuccessful() && responseBody !=null){
+                    ArrayList<Category> categories =responseBody.categories;
+                    networkDelegate.OnSuccessResultCategory(categories);
+                }else {
+                    Log.i("FoodPlanner", "Response failed: Category " + response.message());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseCategory> call, Throwable t) {
+
+                Log.e("FoodPlanner", "Request failed Category", t);
+            }
+        });
+
+
+    }
+
+    @Override
+    public void makeApiCallIngredients(Call<ResponseIngredients> call, NetworkIngredients networkDelegate) {
+
+        call.enqueue(new Callback<ResponseIngredients>() {
+            @Override
+            public void onResponse(@NonNull Call<ResponseIngredients> call, @NonNull Response<ResponseIngredients> response) {
+                ResponseIngredients responseBody = response.body();
+
+                if(response.isSuccessful() && responseBody !=null){
+                    ArrayList<Ingredients> ingredients =responseBody.meals;
+                    networkDelegate.OnSuccessResultIngredients(ingredients);
+                }else {
+                    Log.i("FoodPlanner", "Response failed: Category " + response.message());
+
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<ResponseIngredients> call, Throwable t) {
+
+            }
+        });
+
+    }
+
+    @Override
+    public void makeApiCallCountry(Call<ResponseCountry> call, NetworkDelegateCountry networkDelegate) {
+
+        call.enqueue(new Callback<ResponseCountry>() {
+            @Override
+            public void onResponse(@NonNull Call<ResponseCountry> call, @NonNull Response<ResponseCountry> response) {
+              ResponseCountry responseBody = response.body();
+                if(response.isSuccessful() && responseBody !=null){
+                    ArrayList<CountryNames> countriesNames =responseBody.meals;
+                    networkDelegate.OnSuccessResultCountries(countriesNames);
+                    Log.i("sucesssscountry","sucess");
+                }else {
+                    Log.i("FoodPlannerCountry", "Response failed: Category " + response.message());
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseCountry> call, Throwable t) {
+
+                Log.i("countryyyyFail",t.getMessage());
+
+            }
+        });
+
+    }
+
+
 
 
 

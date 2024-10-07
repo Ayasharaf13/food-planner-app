@@ -1,49 +1,72 @@
 package com.example.foodplanner.search.view;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.foodplanner.R;
+import com.example.foodplanner.db.ConcreteLocalSource;
+import com.example.foodplanner.detailsmeals.view.GenericAdapter;
+import com.example.foodplanner.home.view.HomeAdapter;
+import com.example.foodplanner.models.Category;
+import com.example.foodplanner.models.Country;
+import com.example.foodplanner.models.CountryNames;
+import com.example.foodplanner.models.Ingredients;
+import com.example.foodplanner.models.RandomMeal;
+import com.example.foodplanner.models.Repository;
+import com.example.foodplanner.network.FoodClient;
+import com.example.foodplanner.search.presenter.SearchPresenter;
+import com.example.foodplanner.search.presenter.SearchPresenterInterface;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link SearchFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class SearchFragment extends Fragment {
+import java.util.ArrayList;
+import java.util.List;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+public class SearchFragment extends Fragment  implements SearchViewInterface {
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+
+  CategoryAdapter categoryAdapter;
+  GenericAdapter<Ingredients> ingredientsAdapter;
+  RecyclerView recyclerViewCategory;
+  SearchPresenterInterface searchPresenter;
+  RecyclerView recyclerViewIngredients;
+  RecyclerView recyclerViewCountry;
+
+
+  SearchAdapter searchAdapter;
+    GenericAdapter<Country> countryAdapter;
+
+   androidx.appcompat.widget.SearchView searchView;
+
+
+
+
 
     public SearchFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment SearchFragment.
-     */
+
     // TODO: Rename and change types and number of parameters
     public static SearchFragment newInstance(String param1, String param2) {
         SearchFragment fragment = new SearchFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+
         fragment.setArguments(args);
         return fragment;
     }
@@ -51,10 +74,23 @@ public class SearchFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
+        searchPresenter = new SearchPresenter(Repository.getInstance(FoodClient.getInstance(),
+                ConcreteLocalSource.getInstance(requireContext())),this);
+
+          categoryAdapter = new CategoryAdapter();
+         countryAdapter =new GenericAdapter<>();
+         ingredientsAdapter = new GenericAdapter<>();
+         searchAdapter = new SearchAdapter("search");
+
+        searchPresenter.getCategories();
+        searchPresenter.getIngredients();
+        searchPresenter.getCountries();
+      //  searchPresenter.getMealsBySearch(searchAdapter.getFilter().toString());
+
+
+
+
     }
 
     @Override
@@ -63,4 +99,161 @@ public class SearchFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_search, container, false);
     }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        recyclerViewCategory = view.findViewById(R.id.recyclerCategory);
+        recyclerViewIngredients = view.findViewById(R.id.recyclerIngrediance);
+        recyclerViewCountry = view.findViewById(R.id.recyclerCountry);
+
+        searchView = view.findViewById(R.id.simpleSearchView);
+
+        GridLayoutManager layoutManager3=new GridLayoutManager(requireContext(),2);
+
+        GridLayoutManager layoutManager=new GridLayoutManager(requireContext(),2);
+        LinearLayoutManager layoutManagerHorizontal = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager layoutManagerHorizontal2 = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+
+        recyclerViewCategory.setLayoutManager(layoutManager);
+        recyclerViewIngredients.setLayoutManager(layoutManagerHorizontal);
+        recyclerViewCountry.setLayoutManager(layoutManagerHorizontal2);
+
+
+             searchView.setOnSearchClickListener(new View.OnClickListener() {
+                 @Override
+                 public void onClick(View view) {
+                     Toast.makeText(requireContext(), "click : search ",Toast.LENGTH_LONG).show();
+                     NavDirections action = SearchFragmentDirections.actionSearchFragmentToSearchResultFragment();
+                     Navigation.findNavController(view).navigate(action);
+
+
+                 }
+             });
+
+
+
+
+    }
+
+    public List<Country>  getCountries(List<CountryNames> countriesName) {
+
+        int count = 0;
+       // Country country = new Country();
+        List<Country> countries = new ArrayList<>(28);
+        if (countriesName != null && !countriesName.isEmpty()) {
+            while (count < countriesName.size()) {
+
+                String nameCountry = countriesName.get(count).getStrArea();
+                Log.i("count", String.valueOf(count));
+                Drawable image = getItemImage(nameCountry);
+
+               // country.setImage(image);
+               // country.setNameCountry(nameCountry);
+
+                countries.add(new Country(nameCountry,image));
+
+                Log.i("sizeee", String.valueOf(countries.size()));
+
+                count++;
+
+            }
+        }
+        return countries;
+    }
+
+    @Override
+    public void showCategory(List<Category> categoryList) {
+
+        categoryAdapter.submitList(categoryList);
+        recyclerViewCategory.setAdapter(categoryAdapter);
+
+    }
+
+    @Override
+    public void showIngredients(List<Ingredients> meals) {
+
+      ingredientsAdapter.submitList(meals);
+      recyclerViewIngredients.setAdapter(ingredientsAdapter);
+
+    }
+
+    @Override
+    public void showCountries(List<CountryNames> countryNames) {
+
+         countryAdapter.submitList(getCountries(countryNames));
+         recyclerViewCountry.setAdapter(countryAdapter);
+
+           }
+
+
+
+
+    Drawable getItemImage(String country) {
+
+        if ("American".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.us);
+        } else if ("British".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.uk);
+        } else if ("Canadian".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.ca);
+
+        } else if ("Chinese".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.cn);
+        } else if ("Croatian".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.cr);
+        } else if ("Dutch".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.nl);
+        } else if ("Egyptian".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.eg);
+        } else if ("Filipino".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.ph);
+        } else if ("French".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.fr);
+        } else if ("Greek".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.gr);
+        } else if ("Indian".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.in);
+        } else if ("Irish".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.ireland);
+        } else if ("Italian".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.it);
+        } else if ("Jamaican".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.jm);
+        } else if ("Japanese".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.jp);
+        } else if ("Kenyan".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.ke);
+        } else if ("Malaysian".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.my);
+        } else if ("Mexican".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.mx);
+        } else if ("Moroccan".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.ma);
+        } else if ("Polish".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.pl);
+        } else if ("Portuguese".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.pt);
+        } else if ("Russian".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.ru);
+        } else if ("Spanish".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.es);
+        } else if ("Thai".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.th);
+        } else if ("Tunisian".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.tn);
+        } else if ("Turkish".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.tr);
+        } else if ("Ukrainian".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.ua);
+        } else if ("Vietnamese".equals(country)) {
+            return ContextCompat.getDrawable(requireContext(), R.drawable.vn);
+        }
+        return ContextCompat.getDrawable(requireContext(), R.drawable.ic_launcher_background); // Default fallback
+    }
+
+
+
+
+
 }

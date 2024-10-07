@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <!-- AppBar with Image and Title -->
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
@@ -23,25 +27,48 @@
                 android:src="@drawable/ic_launcher_foreground"
                 app:layout_collapseMode="parallax" />
 
+
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
+
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="4dp"
                 android:background="@android:color/transparent"
                 app:layout_collapseMode="pin"
+                app:layout_constraintEnd_toEndOf="@+id/calenderIcon"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <ImageView
+                android:id="@+id/calenderIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-            />
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calendertoolbar"
+                tools:layout_editor_absoluteX="305dp" />
 
+            <ImageView
+                android:id="@+id/shareicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="18dp"
+                app:srcCompat="@drawable/shareicon" />
 
-
+            <ImageView
+                android:id="@+id/backicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                app:srcCompat="@drawable/backicon" />
 
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
-
-
-
 
 
     <!-- Scrollable Content -->
@@ -53,96 +80,107 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-        app:cardElevation="20dp"
-        app:cardCornerRadius="40dp"
-        app:cardMaxElevation="12dp"
-        app:cardBackgroundColor="@color/white"
-        android:translationZ="20dp"
-        android:clipToPadding="false">
+            android:layout_height="619dp"
 
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="20dp"
+            app:cardMaxElevation="12dp">
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
 
-                android:padding="16dp">
+                android:padding="6dp"
+                tools:ignore="WebViewLayout">
 
                 <!-- Title and details -->
-                <TextView
-                    android:id="@+id/meal_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="8dp"
-                    android:text="Chicken Ros Salad"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/meal_calories"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="8dp"
-                    android:text="280 cal"
-                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="381dp"
+                    android:layout_height="87dp"
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/meal_rating"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="8dp"
-                    android:text="4.8 ★"
-                    android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/meal_title"
+
+                        android:layout_width="304dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:fontFamily="@font/worksanssemibold"
+                        android:paddingBottom="8dp"
+                        android:text="Chicken Ros Salad"
+                        android:textColor="@color/black"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/savedetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/savedetails"
+                        tools:layout_editor_absoluteX="267dp"
+                        tools:layout_editor_absoluteY="-4dp" />
+
+                </LinearLayout>
 
                 <!-- Ingredients -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="16dp"
-                    android:paddingBottom="8dp"
-                    android:text="Ingredients"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="176dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsbold"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="Ingredients"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnadd"
+                        android:layout_width="146dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/dark_green"
+                        android:drawableLeft="@drawable/plusicon"
+                        android:text="Add Plan"
+                        android:textAllCaps="false"
+                        app:cornerRadius="100dp" />
+
+                </LinearLayout>
 
                 <!-- Add your ingredient views here -->
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:paddingBottom="8dp">
 
                     <!-- Example ingredient item -->
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:contentDescription="Chicken"
-                        android:src="@drawable/ic_home" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerIngred"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="100dp" />
+
                     <!-- Add other ingredient items similarly -->
 
                     <!-- Example ingredient item -->
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:contentDescription="Chicken1"
-                        android:src="@drawable/ic_home" />
                     <!-- Add other ingredient items similarly -->
 
                     <!-- Example ingredient item -->
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:contentDescription="Chicken2"
-                        android:src="@drawable/ic_home" />
                     <!-- Add other ingredient items similarly -->
 
                     <!-- Example ingredient item -->
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:contentDescription="Chicken3"
-                        android:src="@drawable/ic_home" />
                     <!-- Add other ingredient items similarly -->
                 </LinearLayout>
 
@@ -151,75 +189,30 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsbold"
                     android:paddingTop="16dp"
                     android:paddingBottom="8dp"
                     android:text="Instruction"
-                    android:textSize="20sp"
+                    android:textSize="24sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/meal_instructions"
-                    android:layout_width="391dp"
-                    android:layout_height="206dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter24ptregular"
                     android:lineSpacingExtra="4dp"
-                    android:text="• Preheat the air fryer to 400°F. ...
-A healthy diet comprises a combination of different foods. These include:
+                    android:text=""
+                    android:textSize="10sp" />
 
-Staples like cereals (wheat, barley, rye, maize or rice) or starchy tubers or roots (potato, yam, taro or cassava).
-Legumes (lentils and beans).
-Fruit and vegetables.
-Foods from animal sources (meat, fish, eggs and milk).
-Here is some useful information, based on WHO recommendations, to follow a healthy diet, and the benefits of doing so.
-
-Breastfeed babies and young children:
-A healthy diet starts early in life - breastfeeding fosters healthy growth, and may have longer-term health benefits, like reducing the risk of becoming overweight or obese and developing noncommunicable diseases later in life.
-Feeding babies exclusively with breast milk from birth to 6 months of life is important for a healthy diet. It is also important to introduce a variety of safe and nutritious complementary foods at 6 months of age, while continuing to breastfeed until your child is two years old and beyond.
-
-
-Eat plenty of vegetables and fruit:
-They are important sources of vitamins, minerals, dietary fibre, plant protein and antioxidants.
-People with diets rich in vegetables and fruit have a significantly lower risk of obesity, heart disease, stroke, diabetes and certain types of cancer.
-
-
-Eat less fat:
-Fats and oils and concentrated sources of energy. Eating too much, particularly the wrong kinds of fat, like saturated and industrially-produced trans-fat, can increase the risk of heart disease and stroke.
-Using unsaturated vegetable oils (olive, soy, sunflower or corn oil) rather than animal fats or oils high in saturated fats (butter, ghee, lard, coconut and palm oil) will help consume healthier fats.
-To avoid unhealthy weight gain, consumption of total fat should not exceed 30% of a person's overall energy intake.
-
-
-Limit intake of sugars:
-For a healthy diet, sugars should represent less than 10% of your total energy intake. Reducing even further to under 5% has additional health benefits.
-Choosing fresh fruits instead of sweet snacks such as cookies, cakes and chocolate helps reduce consumption of sugars.
-Limiting intake of soft drinks, soda and other drinks high in sugars (fruit juices, cordials and syrups, flavoured milks and yogurt drinks) also helps reduce intake of sugars.
-
-
-Reduce salt intake:
-Keeping your salt intake to less than 5g per day helps prevent hypertension and reduces the risk of heart disease and stroke in the adult population.
-Limiting the amount of salt and high-sodium condiments (soy sauce and fish sauce) when cooking and preparing foods helps reduce salt intake.
-
-Eat plenty of vegetables and fruit:
-They are important sources of vitamins, minerals, dietary fibre, plant protein and antioxidants.
-People with diets rich in vegetables and fruit have a significantly lower risk of obesity, heart disease, stroke, diabetes and certain types of cancer.
-
-
-Eat less fat:
-Fats and oils and concentrated sources of energy. Eating too much, particularly the wrong kinds of fat, like saturated and industrially-produced trans-fat, can increase the risk of heart disease and stroke.
-Using unsaturated vegetable oils (olive, soy, sunflower or corn oil) rather than animal fats or oils high in saturated fats (butter, ghee, lard, coconut and palm oil) will help consume healthier fats.
-To avoid unhealthy weight gain, consumption of total fat should not exceed 30% of a person's overall energy intake.
-
-
-Limit intake of sugars:
-For a healthy diet, sugars should represent less than 10% of your total energy intake. Reducing even further to under 5% has additional health benefits.
-Choosing fresh fruits instead of sweet snacks such as cookies, cakes and chocolate helps reduce consumption of sugars.
-Limiting intake of soft drinks, soda and other drinks high in sugars (fruit juices, cordials and syrups, flavoured milks and yogurt drinks) also helps reduce intake of sugars.
-
-
-Reduce salt intake:"
-
-
-                    android:textSize="16sp" />
 
                 <!-- Add any other content here, like video section -->
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="338dp"
+                    android:layout_marginBottom="80dp"
+                    android:layout_height="200dp" />
+
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
