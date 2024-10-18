@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
@@ -17,83 +16,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.foodplanner.R;
-import com.example.foodplanner.home.view.HomeAdapter;
 import com.example.foodplanner.models.RandomMeal;
-import com.example.foodplanner.models.Repository;
-import com.example.foodplanner.network.FoodClient;
-import com.example.foodplanner.save.presenter.SavePresenterInterface;
-
-import java.util.List;
 
 public class SaveMealsAdapter extends ListAdapter<RandomMeal,SaveMealsAdapter.ViewHolder> {
-<<<<<<< HEAD
 
 
     InterfaceAdapter deleteClick  ;
-=======
-<<<<<<< HEAD
-
-
-    InterfaceAdapter deleteClick  ;
-=======
-<<<<<<< HEAD
-
-
-    InterfaceAdapter deleteClick  ;
-=======
-<<<<<<< HEAD
-
-
-    InterfaceAdapter deleteClick  ;
-=======
-<<<<<<< HEAD
-
-
-    InterfaceAdapter deleteClick  ;
-=======
-   /* SavePresenterInterface savePresenterInterface;
-    savePresenterInterface = new SavePresenter(
-            Repository.getInstance(FoodClient.getInstance(),ConcreteLocalSource.getInstance(requireContext()))
-            , this);
-
-    */
-
-    InterfaceAdapter deleteClick  = (id) -> {};
->>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
->>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
 
 
     protected SaveMealsAdapter( InterfaceAdapter delete) {
         super(new SaveMealsAdapter.SaveMealsDiffUtil());
-<<<<<<< HEAD
 
         this.deleteClick =delete;
-=======
-<<<<<<< HEAD
-
-        this.deleteClick =delete;
-=======
-<<<<<<< HEAD
-
-        this.deleteClick =delete;
-=======
-<<<<<<< HEAD
-
-        this.deleteClick =delete;
-=======
-<<<<<<< HEAD
-
-        this.deleteClick =delete;
-=======
->>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
->>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
     }
 
 
@@ -138,15 +73,15 @@ public class SaveMealsAdapter extends ListAdapter<RandomMeal,SaveMealsAdapter.Vi
         holder.titleMeal.setText(currentObj.getStrMeal());
 
 
-       holder.imageDelete.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
+        holder.imageDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 String id = currentObj.getIdMeal();
                 deleteClick.delete(id);
 
 
-           }
-       });
+            }
+        });
 
 
 

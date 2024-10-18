@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".search.view.SearchResultFragment" >
 
 
@@ -60,20 +59,3 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-=======
-    tools:context=".search.view.IngredientsMealsFragment" >
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerFilterByIngred"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e

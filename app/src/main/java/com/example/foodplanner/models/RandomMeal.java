@@ -1,126 +1,32 @@
 package com.example.foodplanner.models;
 
-<<<<<<< HEAD
 import androidx.annotation.NonNull;
-=======
-<<<<<<< HEAD
-import androidx.annotation.NonNull;
-=======
-<<<<<<< HEAD
-import androidx.annotation.NonNull;
-=======
-<<<<<<< HEAD
-import androidx.annotation.NonNull;
-=======
-<<<<<<< HEAD
-import androidx.annotation.NonNull;
-=======
-<<<<<<< HEAD
-import androidx.annotation.NonNull;
-=======
->>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
->>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
->>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity (tableName = "Meals_table")
 public class RandomMeal {
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
->>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
     @PrimaryKey
     @NonNull
     public String idMeal="";
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-    @PrimaryKey(autoGenerate = true)
-    public String idMeal="";
 
-=======
-    public String idMeal="";
->>>>>>> a9e1adc143fdd02927f2d841ceff456f59aad7bd
->>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
->>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
->>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
+    public String date ="";
+
+
+
+    public boolean isPlanner =false;
+    public boolean isSave = false;
+
     public String strMeal="";
     public String strMealThumb="";
     public String strYoutube="";
-   public String strInstructions="";
+    public String strInstructions="";
 
-<<<<<<< HEAD
-   public String strCategory ="";
+    public String strCategory ="";
     public String strArea = "";
-   public String strTags ="";
-=======
-<<<<<<< HEAD
-   public String strCategory ="";
-    public String strArea = "";
-   public String strTags ="";
-=======
-<<<<<<< HEAD
-   public String strCategory ="";
-    public String strArea = "";
-   public String strTags ="";
-=======
-<<<<<<< HEAD
-   public String strCategory ="";
-    public String strArea = "";
-   public String strTags ="";
-=======
-<<<<<<< HEAD
-   public String strCategory ="";
-    public String strArea = "";
-   public String strTags ="";
-=======
-<<<<<<< HEAD
-   public String strCategory ="";
-    public String strArea = "";
-   public String strTags ="";
-=======
-<<<<<<< HEAD
-   public String strCategory ="";
-    public String strArea = "";
-   public String strTags ="";
-=======
->>>>>>> a9e1adc143fdd02927f2d841ceff456f59aad7bd
->>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
->>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
->>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
+    public String strTags ="";
 
     public String strIngredient1="";
     public String strIngredient2="";
@@ -143,25 +49,33 @@ public class RandomMeal {
     public String strIngredient19="";
     public String strIngredient20="";
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
->>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
->>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
+
+
+    public boolean isPlanner() {
+        return isPlanner;
+    }
+
+    public void setPlanner(boolean planner) {
+        isPlanner = planner;
+    }
+
+    public boolean isSave() {
+        return isSave;
+    }
+
+    public void setSave(boolean save) {
+        isSave = save;
+    }
+
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     public String getStrCategory() {
         return strCategory;
     }
@@ -186,26 +100,6 @@ public class RandomMeal {
         this.strTags = strTags;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> a9e1adc143fdd02927f2d841ceff456f59aad7bd
->>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
->>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
->>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
     public String getStrIngredient1() {
         return strIngredient1;
     }
@@ -411,12 +305,41 @@ public class RandomMeal {
     public String toString() {
         return "RandomMeal{" +
                 "idMeal='" + idMeal + '\'' +
-              //  ", strMeal='" + strMeal + '\'' +
+                //  ", strMeal='" + strMeal + '\'' +
                 //", strMealThumb='" + strMealThumb + '\'' +
                 '}';
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

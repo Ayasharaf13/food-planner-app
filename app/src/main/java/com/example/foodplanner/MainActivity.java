@@ -7,19 +7,12 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import android.database.Observable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.example.foodplanner.models.RandomMeal;
-import com.example.foodplanner.network.FoodClient;
-import com.example.foodplanner.network.NetworkDelegate;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-
-import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
