@@ -19,24 +19,23 @@ import com.bumptech.glide.Glide;
 import com.example.foodplanner.R;
 import com.example.foodplanner.models.Country;
 import com.example.foodplanner.models.Ingredients;
-import com.example.foodplanner.models.RandomMeal;
 import com.example.foodplanner.search.view.SearchFragmentDirections;
 
 public class GenericAdapter<T> extends ListAdapter<T, GenericAdapter.ViewHolder> {
 
-  //  OnBindData bindData;
+    //  OnBindData bindData;
 
     public GenericAdapter(/*OnBindData bindData*/) {
         super(new IngredientsDiffUtil());
-       // this.bindData = bindData;
+        // this.bindData = bindData;
     }
 
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-       public ImageView imageMeal;
+        public ImageView imageMeal;
 
-       public   TextView titleMeal;
+        public   TextView titleMeal;
 
 
 
@@ -58,7 +57,7 @@ public class GenericAdapter<T> extends ListAdapter<T, GenericAdapter.ViewHolder>
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
         T currentObj = getItem(position);
-      //  bindData.onBind(holder,currentObj);
+        //  bindData.onBind(holder,currentObj);
 
         // Example: If the type is `Country`, cast and handle it.
         if (currentObj instanceof Country) {
@@ -76,36 +75,36 @@ public class GenericAdapter<T> extends ListAdapter<T, GenericAdapter.ViewHolder>
                 }
             });
         }
-       else if(currentObj instanceof Ingredients){
+        else if(currentObj instanceof Ingredients){
             Ingredients ingredients = (Ingredients) currentObj;
             Glide.with(holder.itemView.getContext())
                     .load("https://www.themealdb.com/images/ingredients/"+((Ingredients) currentObj).strIngredient+".png")
                     .override(300, 200)
                     .error(R.drawable.ic_launcher_background)
                     .into(holder.imageMeal);
-                holder.titleMeal.setText(ingredients.strIngredient);
+            holder.titleMeal.setText(ingredients.strIngredient);
 
-                holder.imageMeal.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
+            holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
 
-                        String nameIngredients = ((Ingredients) currentObj).strIngredient;
-                        NavDirections action = SearchFragmentDirections.actionSearchFragmentToIngredientsMealsFragment().setNameIngredients(nameIngredients);
-                        Navigation.findNavController(view).navigate(action);
+                    String nameIngredients = ((Ingredients) currentObj).strIngredient;
+                    NavDirections action = SearchFragmentDirections.actionSearchFragmentToIngredientsMealsFragment().setNameIngredients(nameIngredients);
+                    Navigation.findNavController(view).navigate(action);
 
 
-                    }
-                });
+                }
+            });
 
         }else if(currentObj instanceof  String){
 
             String currentItem = (String) currentObj;
-              Log.i("testadapter",currentItem );
-        Glide.with(holder.itemView.getContext())
-                .load("https://www.themealdb.com/images/ingredients/"+currentObj+".png")
-                .override(300, 200)
-                .error(R.drawable.ic_launcher_background)
-                .into(holder.imageMeal);
+            Log.i("testadapter",currentItem );
+            Glide.with(holder.itemView.getContext())
+                    .load("https://www.themealdb.com/images/ingredients/"+currentObj+".png")
+                    .override(300, 200)
+                    .error(R.drawable.ic_launcher_background)
+                    .into(holder.imageMeal);
             holder.titleMeal.setText(currentItem );
 
 
