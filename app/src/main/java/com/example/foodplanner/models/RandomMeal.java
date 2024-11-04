@@ -1,7 +1,10 @@
 package com.example.foodplanner.models;
 
 import androidx.annotation.NonNull;
+<<<<<<< HEAD
 import androidx.room.ColumnInfo;
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
@@ -30,6 +33,7 @@ public class RandomMeal {
     @NonNull
     public String idMeal="";
 
+<<<<<<< HEAD
     public String date ="";
 
     @ColumnInfo(name = "day_id")
@@ -38,6 +42,16 @@ public class RandomMeal {
     public boolean isPlanner =false;
     public boolean isSave = false;
 
+=======
+
+    public String date ="";
+
+
+
+    public boolean isPlanner =false;
+    public boolean isSave = false;
+
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
     public String strMeal="";
     public String strMealThumb="";
     public String strYoutube="";
@@ -70,6 +84,7 @@ public class RandomMeal {
 
 
 
+<<<<<<< HEAD
     public int getId() {
         return id;
     }
@@ -78,6 +93,8 @@ public class RandomMeal {
         this.id = id;
     }
 
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
     public boolean isPlanner() {
         return isPlanner;
     }

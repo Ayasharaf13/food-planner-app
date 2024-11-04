@@ -52,9 +52,13 @@
         tools:layout="@layout/fragment_planner" >
         <argument
             android:name="idMealPlanner"
+<<<<<<< HEAD
             app:argType="string"
             app:nullable="true"
             android:defaultValue="@null" />
+=======
+            app:argType="string" />
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
     </fragment>
     <fragment
         android:id="@+id/detailsMealFragment"

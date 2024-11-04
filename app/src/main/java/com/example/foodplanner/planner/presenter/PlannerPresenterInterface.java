@@ -3,7 +3,10 @@ package com.example.foodplanner.planner.presenter;
 
 import androidx.lifecycle.LiveData;
 
+<<<<<<< HEAD
 import com.example.foodplanner.models.Day;
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
 import com.example.foodplanner.models.RandomMeal;
 
 import java.util.List;
@@ -22,6 +25,7 @@ public interface PlannerPresenterInterface {
      LiveData<List<RandomMeal>> searchByIdDB (String id);
      void delete (List<RandomMeal> meal);
 
+<<<<<<< HEAD
      LiveData<List<RandomMeal>> getAllMealsSavedPlanner();
 
      void getPositionDaySelected (int position);
@@ -33,4 +37,6 @@ public interface PlannerPresenterInterface {
 
     LiveData<List<RandomMeal>> getAllSavePlannerBySelectedDay(int id);
 
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
 }

@@ -85,6 +85,7 @@ public class ConcreteLocalSource implements LocalSource{
         return mealDao.getAllMealsSavedByIdPlanner(id);
     }
 
+<<<<<<< HEAD
     @Override
     public void saveDays(List<Day> days) {
         new Thread(new Runnable() {
@@ -117,4 +118,6 @@ public class ConcreteLocalSource implements LocalSource{
 
 
 
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
 }

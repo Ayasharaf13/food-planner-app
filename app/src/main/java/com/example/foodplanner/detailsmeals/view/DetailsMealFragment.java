@@ -165,7 +165,11 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
                 @Override
                 public void onClick(View view) {
 
+<<<<<<< HEAD
                     NavDirections action = DetailsMealFragmentDirections.actionDetailsMealFragmentToPlannerFragment().setIdMealPlanner(idMeal);
+=======
+                    NavDirections action = DetailsMealFragmentDirections.actionDetailsMealFragmentToPlannerFragment(idMeal);
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
                     Navigation.findNavController(view).navigate(action);
 
 
