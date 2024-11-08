@@ -89,6 +89,10 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
         GridLayoutManager layoutManager=new GridLayoutManager(requireContext(),2);
         saveRecyclerView.setLayoutManager(layoutManager);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
         savePresenterInterface.getAllSavePlannerBySelectedDay(36).observe(SaveFragment.this,
                 new Observer<List<RandomMeal>>() {
                     @Override
@@ -97,6 +101,11 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
                         saveRecyclerView.setAdapter(saveMealsAdapter);
                     }
                 });
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
         // Retrieve the argument using Safe Args
         if (getArguments() != null) {
 
@@ -105,7 +114,14 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
             idMealSave = args.getIdSavingFood();
             savePresenterInterface.getMealsByID(idMealSave);
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
             //   DetailsMealFragmentArgs args = DetailsMealFragmentArgs.fromBundle(getArguments());
             //  idMealSave = args.getIdMeal();
 

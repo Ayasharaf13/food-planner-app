@@ -1,7 +1,14 @@
 package com.example.foodplanner.models;
 
 import androidx.annotation.NonNull;
+<<<<<<< HEAD
 import androidx.room.ColumnInfo;
+=======
+<<<<<<< HEAD
+import androidx.room.ColumnInfo;
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
@@ -30,6 +37,10 @@ public class RandomMeal {
     @NonNull
     public String idMeal="";
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
     public String date ="";
 
     @ColumnInfo(name = "day_id")
@@ -38,6 +49,19 @@ public class RandomMeal {
     public boolean isPlanner =false;
     public boolean isSave = false;
 
+<<<<<<< HEAD
+=======
+=======
+
+    public String date ="";
+
+
+
+    public boolean isPlanner =false;
+    public boolean isSave = false;
+
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
     public String strMeal="";
     public String strMealThumb="";
     public String strYoutube="";
@@ -70,6 +94,10 @@ public class RandomMeal {
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
     public int getId() {
         return id;
     }
@@ -78,6 +106,11 @@ public class RandomMeal {
         this.id = id;
     }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
     public boolean isPlanner() {
         return isPlanner;
     }

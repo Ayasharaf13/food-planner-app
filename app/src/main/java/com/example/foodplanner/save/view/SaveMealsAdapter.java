@@ -78,8 +78,24 @@ public class SaveMealsAdapter extends ListAdapter<RandomMeal,SaveMealsAdapter.Vi
             public void onClick(View view) {
                 String id = currentObj.getIdMeal();
                 deleteClick.delete(id);
+<<<<<<< HEAD
             }
         });
+=======
+<<<<<<< HEAD
+            }
+        });
+=======
+
+
+            }
+        });
+
+
+
+
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
     }
 
 

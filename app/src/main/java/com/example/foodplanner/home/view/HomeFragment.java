@@ -61,7 +61,12 @@ public class HomeFragment extends Fragment implements HomeViewInterface {
         homePresenterInterface = new HomePresenter(Repository.getInstance
                 (FoodClient.getInstance(), ConcreteLocalSource.getInstance(requireContext() ))
                 ,this);
+<<<<<<< HEAD
 
+=======
+        homePresenterInterface.getRandomMeals();
+        homePresenterInterface.getSuggestionMeals();
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
     }
 
     @Override
@@ -99,6 +104,14 @@ public class HomeFragment extends Fragment implements HomeViewInterface {
 
     @Override
     public void showData(List<RandomMeal> randomMeals) {
+<<<<<<< HEAD
+=======
+        //  imageRandomMeal.setImageResource(randomMeals.indexOf(0));
+        //  nameOfRandomMeal.setText(randomMeals.indexOf(0));
+        // Log.i("show",randomMeals.toString());
+        // imageRandomMeal.setImageResource(R.drawable.ic_launcher_background);
+        Glide.with(requireContext())
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 
 
             //  imageRandomMeal.setImageResource(randomMeals.indexOf(0));
@@ -107,11 +120,15 @@ public class HomeFragment extends Fragment implements HomeViewInterface {
             // imageRandomMeal.setImageResource(R.drawable.ic_launcher_background);
             Glide.with(requireContext())
 
+<<<<<<< HEAD
                     .load(randomMeals.get(0).strMealThumb)
                     .error(R.drawable.ic_launcher_background)
                     .into(imageRandomMeal);
 
             txtTitleCard.setText(randomMeals.get(0).strMeal);
+=======
+        txtTitleCard.setText(randomMeals.get(0).strMeal);
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 
 
     }

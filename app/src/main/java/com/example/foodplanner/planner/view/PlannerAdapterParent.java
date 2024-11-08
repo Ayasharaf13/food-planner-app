@@ -50,7 +50,11 @@ public class PlannerAdapterParent extends ListAdapter<Day,PlannerAdapterParent.V
          this.daySelected  = onDaySelected;
          this.onDeleteItemPlanner = deleteItemPlanner;
          this.plannerPresenter = plannerPresenter;
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 
     }
 

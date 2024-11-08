@@ -5,7 +5,14 @@ import android.util.Log;
 
 import androidx.lifecycle.LiveData;
 
+<<<<<<< HEAD
 import com.example.foodplanner.models.Day;
+=======
+<<<<<<< HEAD
+import com.example.foodplanner.models.Day;
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 import com.example.foodplanner.models.RandomMeal;
 import com.example.foodplanner.models.RepositoryInterface;
 import com.example.foodplanner.network.FoodClient;
@@ -15,13 +22,32 @@ import com.example.foodplanner.planner.view.PlannerViewInterface;
 
 import java.util.List;
 
+<<<<<<< HEAD
 public class PlannerPresenter implements PlannerPresenterInterface ,NetworkDelegate  {
+=======
+<<<<<<< HEAD
+public class PlannerPresenter implements PlannerPresenterInterface ,NetworkDelegate  {
+=======
+public class PlannerPresenter implements PlannerPresenterInterface ,NetworkDelegate{
+
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 
     RepositoryInterface repo;
     PlannerViewInterface plannerViewInterface;
     String dat;
+<<<<<<< HEAD
     int position =-1;
     int positionForDropList=-1;
+=======
+<<<<<<< HEAD
+    int position =-1;
+    int positionForDropList=-1;
+=======
+
+
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 
 
     public PlannerPresenter (RepositoryInterface repo, PlannerViewInterface plannerViewInterface){
@@ -36,11 +62,36 @@ public class PlannerPresenter implements PlannerPresenterInterface ,NetworkDeleg
         listOfMeals.get(0).date = getDat() ;
         listOfMeals.get(0).setPlanner(true);
         listOfMeals.get(0).setSave(false);
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+        if(position !=-1) {
+            listOfMeals.get(0).setId(position);
+        }
+        repo.saveMeal(listOfMeals);
+=======
+        listOfMeals.get(0).date = getDat() ;
+        listOfMeals.get(0).setPlanner(true);
+        listOfMeals.get(0).setSave(false);
+
+        Log.i("calenderdate: ",getDat());
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 
         if(position !=-1) {
             listOfMeals.get(0).setId(position);
         }
         repo.saveMeal(listOfMeals);
+<<<<<<< HEAD
+=======
+        plannerViewInterface.showMealsPlanner(repo.getAllMealFromStoragePlanner());
+
+
+      //  repo.saveMeal(listOfMeals);
+       // plannerViewInterface.showMealsPlanner(repo.getAllMealFromStorage());
+
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
     }
 
 
@@ -80,6 +131,10 @@ public class PlannerPresenter implements PlannerPresenterInterface ,NetworkDeleg
          repo.deleteMeal(meal);
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
     @Override
     public LiveData<List<RandomMeal>> getAllMealsSavedPlanner() {
         return repo.getAllMealFromStoragePlanner();
@@ -111,4 +166,12 @@ public class PlannerPresenter implements PlannerPresenterInterface ,NetworkDeleg
     }
 
 
+<<<<<<< HEAD
+=======
+=======
+
+
+
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 }

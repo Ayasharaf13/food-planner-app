@@ -165,7 +165,15 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
                 @Override
                 public void onClick(View view) {
 
+<<<<<<< HEAD
                     NavDirections action = DetailsMealFragmentDirections.actionDetailsMealFragmentToPlannerFragment().setIdMealPlanner(idMeal);
+=======
+<<<<<<< HEAD
+                    NavDirections action = DetailsMealFragmentDirections.actionDetailsMealFragmentToPlannerFragment().setIdMealPlanner(idMeal);
+=======
+                    NavDirections action = DetailsMealFragmentDirections.actionDetailsMealFragmentToPlannerFragment(idMeal);
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
                     Navigation.findNavController(view).navigate(action);
 
 
@@ -179,7 +187,11 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
     @Override
     public void showMealsById(List<RandomMeal> randomMeals) {
         RandomMeal mealDetails = randomMeals.get(0);
+<<<<<<< HEAD
         String myUrl = mealDetails.getStrYoutube();
+=======
+        String myUrl = mealDetails.strYoutube;
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
         Log.i("whereyout",myUrl);
         Glide.with(getContext())
                 .load(mealDetails.getStrMealThumb())

@@ -1,14 +1,26 @@
 package com.example.foodplanner.db;
 
 import android.content.Context;
+<<<<<<< HEAD
 
 import androidx.annotation.NonNull;
+=======
+<<<<<<< HEAD
+
+import androidx.annotation.NonNull;
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.migration.Migration;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 import com.example.foodplanner.models.Day;
 import com.example.foodplanner.models.RandomMeal;
 
@@ -19,6 +31,18 @@ abstract class AppDataBase extends RoomDatabase {
 
 
     abstract FoodDAO getMealDao();
+<<<<<<< HEAD
+=======
+=======
+import com.example.foodplanner.models.RandomMeal;
+
+@Database(entities = {RandomMeal.class},version = 5)
+abstract class AppDataBase extends RoomDatabase {
+
+
+    abstract FoodDAO getMealDao ();
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 
     private static volatile AppDataBase INSTANCE;
 
@@ -29,8 +53,17 @@ abstract class AppDataBase extends RoomDatabase {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                                     AppDataBase.class, "Meals_DB")
+<<<<<<< HEAD
                             .addMigrations(MIGRATION_5_6,MIGRATION_6_7)
 
+=======
+<<<<<<< HEAD
+                            .addMigrations(MIGRATION_5_6,MIGRATION_6_7)
+
+=======
+                            .fallbackToDestructiveMigration()
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
                             .build();
                 }
             }

@@ -33,6 +33,10 @@ public interface FoodDAO {
     @Delete
     void deleteMeal (List<RandomMeal>  meal);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 
     @Query("SELECT * FROM Meals_table WHERE isPlanner =1")
     LiveData<List<RandomMeal>> getAllMealsSavedPlanner ();
@@ -55,6 +59,22 @@ public interface FoodDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     @NotNull
     void  insertDays(List<Day> days);
+<<<<<<< HEAD
+=======
+=======
+
+
+
+    @Query("SELECT * FROM Meals_table WHERE isPlanner =1")
+    LiveData<List<RandomMeal>> getAllMealsSavedPlanner ();
+
+    @Query("SELECT * FROM Meals_table WHERE idMeal=:id AND isPlanner =1")
+    LiveData<List<RandomMeal>> getAllMealsSavedByIdPlanner (String id);
+
+
+
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 
 
 }

@@ -20,6 +20,10 @@ public interface LocalSource {
     public LiveData<List<RandomMeal>> getAllSavedDataPlanner();
 
     LiveData<List<RandomMeal>>  searchByIdPlanner(String id);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 
     void saveDays(List<Day> days);
 
@@ -27,6 +31,11 @@ public interface LocalSource {
 
     LiveData<List<RandomMeal>> getAllMealsPlannerBySelectedDay(int id);
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 
 
 }

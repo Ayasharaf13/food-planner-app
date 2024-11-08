@@ -74,6 +74,7 @@ public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder>
                 .into(holder.imageMeal);
 
         holder.titleMeal.setText(currentObj.getStrMeal());
+<<<<<<< HEAD
 
         holder.watchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,6 +120,44 @@ public class HomeAdapter extends ListAdapter<RandomMeal, HomeAdapter.ViewHolder>
             }
         });
 
+=======
+
+        holder.imageSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String id =  currentObj.getIdMeal();
+
+                NavDirections action = HomeFragmentDirections.actionHomeFragmentToSaveFragment().setIdSavingFood(id);
+                Navigation.findNavController(view).navigate(action);
+            }
+
+        });
+
+
+        holder.imageMeal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String id = currentObj.getIdMeal();
+                if(Objects.equals(nav, "home")) {
+                    NavDirections action = HomeFragmentDirections.actionHomeFragmentToDetailsMealFragment(id);
+                    Navigation.findNavController(view).navigate(action);
+                }else if(Objects.equals(nav, "category")) {
+                    NavDirections action = MealCategoryFragmentDirections.actionMealCategoryFragmentToDetailsMealFragment(id);
+                    Navigation.findNavController(view).navigate(action);
+                }else if(nav.equals("mealCountry")){
+
+                    NavDirections action = MealCountryFragmentDirections.actionMealCountryFragmentToDetailsMealFragment(id);
+                    Navigation.findNavController(view).navigate(action);
+
+                }else if(nav.equals("mealIngred")){
+                    NavDirections action = IngredientsMealsFragmentDirections.actionIngredientsMealsFragmentToDetailsMealFragment(id);
+                    Navigation.findNavController(view).navigate(action);
+                }
+            }
+        });
+
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
     }
     static class RandomMealDiffUtil extends DiffUtil.ItemCallback<RandomMeal> {
 

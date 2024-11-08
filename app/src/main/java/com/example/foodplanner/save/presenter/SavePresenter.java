@@ -45,6 +45,10 @@ public class SavePresenter implements NetworkDelegate ,SavePresenterInterface {
     }
 
     @Override
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
     public LiveData<List<RandomMeal>> getAllSavePlannerBySelectedDay(int id) {
         return repo.getAllMealsSavedPlannerBySelectDay(id);
     }
@@ -58,6 +62,17 @@ public class SavePresenter implements NetworkDelegate ,SavePresenterInterface {
         Log.i("sucess","done sucess save");
        // saveViewInterface.showMealSaved(repo.getAllMealFromStorage());
         saveViewInterface.showMealSaved(repo.getAllMealsSavedPlannerBySelectDay(36));
+<<<<<<< HEAD
+=======
+=======
+    public void OnSuccessResult(List<RandomMeal> listOfMeals) {
+        listOfMeals.get(0).setSave(true);
+        listOfMeals.get(0).setPlanner(false);
+        repo.saveMeal(listOfMeals);
+        Log.i("sucess","done sucess save");
+        saveViewInterface.showMealSaved(repo.getAllMealFromStorage());
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
     }
 
     @Override

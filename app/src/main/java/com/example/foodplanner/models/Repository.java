@@ -124,6 +124,7 @@ public class Repository implements  RepositoryInterface{
     @Override
     public LiveData<List<RandomMeal>> getAllMealFromStoragePlanner() {
         return localSource.getAllSavedDataPlanner();
+<<<<<<< HEAD
     }
 
     @Override
@@ -146,6 +147,33 @@ public class Repository implements  RepositoryInterface{
         return localSource.getAllMealsPlannerBySelectedDay(id);
     }
 
+=======
+    }
+
+    @Override
+    public LiveData<List<RandomMeal>> searchByIdPlanner(String id) {
+       return localSource.searchByIdPlanner(id);
+<<<<<<< HEAD
+    }
+
+    @Override
+    public void saveDay(List<Day> days) {
+       localSource.saveDays(days);
+    }
+
+    @Override
+    public void deleteRepeatedData() {
+        localSource.deleteRepeatedData();
+    }
+
+    @Override
+    public LiveData<List<RandomMeal>> getAllMealsSavedPlannerBySelectDay(int id) {
+        return localSource.getAllMealsPlannerBySelectedDay(id);
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+    }
+
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
 
 }
 
