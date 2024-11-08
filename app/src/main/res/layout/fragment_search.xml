@@ -4,69 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".search.view.SearchFragment" >
-<<<<<<< HEAD
+    tools:context=".search.view.SearchFragment">
 
-    <Button
-        android:id="@+id/btnRegisterCategory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="92dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerIngrediance"
-        android:layout_width="385dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/textCategory"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerCategory"
-        android:layout_width="382dp"
-        android:layout_height="173dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerCountry"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.368"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerCountry"
-        android:layout_width="355dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/simpleSearchView"
-        android:layout_width="350dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegisterCategory" />
-
-<<<<<<< HEAD
     <Button
         android:id="@+id/btnRegisterCategory"
         android:layout_width="wrap_content"
@@ -92,60 +31,17 @@
         app:layout_constraintTop_toBottomOf="@+id/btnRegisterCategory" />
 
 
-<<<<<<< HEAD
-    <Button
-        android:id="@+id/btnRegisterCategory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="92dp"
-        android:layout_marginBottom="5dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/simpleSearchView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/simpleSearchView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtIngredients"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegisterCategory" />
-
-
-=======
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
     <TextView
         android:id="@+id/txtIngredients"
         android:layout_width="193dp"
         android:layout_height="24dp"
         android:layout_marginStart="6dp"
         android:layout_marginBottom="5dp"
-<<<<<<< HEAD
-=======
-=======
-    <TextView
-        android:id="@+id/txtIngredients"
-        android:layout_width="171dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="12dp"
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
         android:fontFamily="@font/poppinsbold"
         android:text="Search by ingredients"
         android:textColor="@color/gray"
         android:textSize="14dp"
         app:layout_constraintBottom_toTopOf="@+id/recyclerIngrediance"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
         app:layout_constraintStart_toStartOf="@+id/recyclerIngrediance"
         app:layout_constraintTop_toBottomOf="@+id/simpleSearchView" />
 
@@ -220,81 +116,4 @@
     </androidx.core.widget.NestedScrollView>
 
 
-<<<<<<< HEAD
-=======
-=======
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textCategory"
-        android:layout_width="95dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginBottom="17dp"
-        android:text="Category"
-        android:textColor="@color/gray"
-        android:fontFamily="@font/poppinsbold"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerCategory"
-=======
-
-    <Button
-        android:id="@+id/btnRegisterCategory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="92dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerIngrediance"
-        android:layout_width="397dp"
-        android:layout_height="126dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="13dp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerCategory"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerCategory"
-        android:layout_width="394dp"
-        android:layout_height="284dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerIngrediance" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerCountry"
-        android:layout_width="413dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerCategory" />
-
-
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/simpleSearchView"
-        android:layout_width="358dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerIngrediance"
-        app:layout_constraintEnd_toEndOf="parent"
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
-        app:layout_constraintStart_toStartOf="parent" />
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 </androidx.constraintlayout.widget.ConstraintLayout>

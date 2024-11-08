@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgMealItemPlanner"
+        android:layout_width="170dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/nameMealItemPlanner"
+        android:layout_width="126dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/suezone"
+        android:text="TextView"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMealItemPlanner" />
+
+    <Button
+        android:id="@+id/btnWatchItemPlanner"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/dark_green"
+        android:drawableLeft="@drawable/playicon"
+        android:fontFamily="@font/robotolight"
+        android:text="Watch"
+        app:cornerRadius="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameMealItemPlanner" />
+
+
+    <TextView
+        android:id="@+id/textCalender"
+        android:layout_width="129dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWatchItemPlanner" />
+
+    <ImageView
+        android:id="@+id/imageDelteItemPlanner"
+
+        android:layout_width="36dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:layout_marginTop="107dp"
+        app:layout_constraintStart_toEndOf="@+id/nameMealItemPlanner"
+        app:layout_constraintTop_toTopOf="@+id/imgMealItemPlanner"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
