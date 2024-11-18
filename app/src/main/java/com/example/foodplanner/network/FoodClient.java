@@ -59,9 +59,19 @@ public class FoodClient implements RemoteSource {
                 MyResponseForRandomMeal responseBody= response.body();
                 if (response.isSuccessful() && responseBody != null) {
                     ArrayList<RandomMeal> meals = responseBody.meals;
+<<<<<<< HEAD
                     if (meals != null) {
                         networkDelegate.OnSuccessResult(meals);
                     }
+=======
+<<<<<<< HEAD
+                    if (meals != null) {
+                        networkDelegate.OnSuccessResult(meals);
+                    }
+=======
+                    networkDelegate.OnSuccessResult(meals);
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
                 } else {
                     Log.i("FoodPlanner", "Response failed: " + response.message());
                 }
@@ -72,6 +82,16 @@ public class FoodClient implements RemoteSource {
                 Log.e("FoodPlanner", "Request failed", t);
             }
         });
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
 
     }
 

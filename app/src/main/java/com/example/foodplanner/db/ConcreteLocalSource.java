@@ -37,8 +37,13 @@ public class ConcreteLocalSource implements LocalSource{
 
 
     @Override
+<<<<<<< HEAD
     public LiveData< List<RandomMeal>> getAllSavedData(int id) {
         savelist = mealDao.getAllMealsSaved(id);
+=======
+    public LiveData< List<RandomMeal>> getAllSavedData() {
+        savelist = mealDao.getAllMealsSaved();
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
         return savelist;
     }
 
@@ -85,6 +90,13 @@ public class ConcreteLocalSource implements LocalSource{
         return mealDao.getAllMealsSavedByIdPlanner(id);
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
     @Override
     public void saveDays(List<Day> days) {
         new Thread(new Runnable() {
@@ -117,4 +129,12 @@ public class ConcreteLocalSource implements LocalSource{
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
 }

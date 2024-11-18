@@ -35,10 +35,15 @@ public class GenericAdapter<T> extends ListAdapter<T, GenericAdapter.ViewHolder>
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
+<<<<<<< HEAD
        // public ImageView imageMeal;
 
         public CircleImageView imageMeal;
 
+=======
+        public ImageView imageMeal;
+
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
         public   TextView titleMeal;
 
 

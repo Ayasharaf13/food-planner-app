@@ -47,7 +47,10 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
     private ImageView mealImageView;
     private TextView titleMeal;
     private WebView webView;
+<<<<<<< HEAD
     private ImageView back;
+=======
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
     private Button btnAddToPlanner;
     private TextView titleTextView, caloriesTextView, ratingTextView, instructionsTextView;
     private ImageView backImg;
@@ -112,12 +115,18 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
         recyclerIngredients = view.findViewById(R.id.recyclerIngred);
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
         //   backImg = view.findViewById(R.id.backicon);
         calenderImage = view.findViewById(R.id.calenderIcon);
         shareImage = view.findViewById(R.id.shareicon);
         titleMeal = view.findViewById(R.id.meal_title);
         webView = view.findViewById(R.id.webview);
         btnAddToPlanner = view.findViewById(R.id.btnadd);
+<<<<<<< HEAD
         back = view.findViewById(R.id.backicon);
 
 
@@ -128,6 +137,10 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
                 Navigation.findNavController(view).navigate(action);
             }
         });
+=======
+
+
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
 
 
         //  saveDetails = view.findViewById(R.id.savedetails);
@@ -175,6 +188,7 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
      // Retrieve the argument using Safe Args
         if (getArguments() != null) {
 
+<<<<<<< HEAD
             String myArg = getArguments().getString("myArg");
 
             if(myArg !=null) {
@@ -186,18 +200,39 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
                 detailsPresenter.getMealsByID(idMeal);
 
             }
+=======
+            detailsPresenter.getMealsByID(idMeal);
+
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
             btnAddToPlanner.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
+<<<<<<< HEAD
                     NavDirections action = DetailsMealFragmentDirections.actionDetailsMealFragmentToPlannerFragment().setIdMealPlanner(idMeal);
                     Navigation.findNavController(view).navigate(action);
 
+=======
+<<<<<<< HEAD
+                    NavDirections action = DetailsMealFragmentDirections.actionDetailsMealFragmentToPlannerFragment().setIdMealPlanner(idMeal);
+=======
+<<<<<<< HEAD
+                    NavDirections action = DetailsMealFragmentDirections.actionDetailsMealFragmentToPlannerFragment().setIdMealPlanner(idMeal);
+=======
+                    NavDirections action = DetailsMealFragmentDirections.actionDetailsMealFragmentToPlannerFragment(idMeal);
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+                    Navigation.findNavController(view).navigate(action);
+
+
+
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
                 }
             });
         }
 
 
+<<<<<<< HEAD
     }
 
 
@@ -210,6 +245,16 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
         String imgMeal = mealDetails.getStrMealThumb();
 
         String myUrl = mealDetails.getStrYoutube();
+=======
+    @Override
+    public void showMealsById(List<RandomMeal> randomMeals) {
+        RandomMeal mealDetails = randomMeals.get(0);
+<<<<<<< HEAD
+        String myUrl = mealDetails.getStrYoutube();
+=======
+        String myUrl = mealDetails.strYoutube;
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
         Log.i("whereyout",myUrl);
         Glide.with(getContext())
                 .load(mealDetails.getStrMealThumb())

@@ -66,8 +66,11 @@ dependencies {
 
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
+<<<<<<< HEAD
 
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+=======
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
 
 
 }

@@ -6,7 +6,11 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
+<<<<<<< HEAD
         <de.hdodenhof.circleimageview.CircleImageView
+=======
+        <ImageView
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
             android:id="@+id/ingradianceImage"
             android:layout_width="80dp"
             android:layout_height="80dp"
