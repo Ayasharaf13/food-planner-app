@@ -45,18 +45,12 @@ public class SavePresenter implements NetworkDelegate ,SavePresenterInterface {
     }
 
     @Override
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
->>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+
     public LiveData<List<RandomMeal>> getAllSavePlannerBySelectedDay(int id) {
         return repo.getAllMealsSavedPlannerBySelectDay(id);
     }
 
-<<<<<<< HEAD
+
 
     @Override
     public LiveData<List<RandomMeal>> getAllSaveBySelectedDay(int id) {
@@ -64,8 +58,7 @@ public class SavePresenter implements NetworkDelegate ,SavePresenterInterface {
     }
 
 
-=======
->>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+
     @Override
     public void OnSuccessResult(List<RandomMeal> listOfMeals) {
         listOfMeals.get(0).setSave(true);
@@ -73,24 +66,21 @@ public class SavePresenter implements NetworkDelegate ,SavePresenterInterface {
         listOfMeals.get(0).setId(36);// field for saved
         repo.saveMeal(listOfMeals);
         Log.i("sucess","done sucess save");
-<<<<<<< HEAD
+
         saveViewInterface.showMealSaved(repo.getAllMealFromStorage(36));
       //  saveViewInterface.showMealSaved(repo.getAllMealsSavedPlannerBySelectDay(36));
-=======
+
        // saveViewInterface.showMealSaved(repo.getAllMealFromStorage());
         saveViewInterface.showMealSaved(repo.getAllMealsSavedPlannerBySelectDay(36));
-<<<<<<< HEAD
-=======
-=======
+
+
     public void OnSuccessResult(List<RandomMeal> listOfMeals) {
         listOfMeals.get(0).setSave(true);
         listOfMeals.get(0).setPlanner(false);
         repo.saveMeal(listOfMeals);
         Log.i("sucess","done sucess save");
         saveViewInterface.showMealSaved(repo.getAllMealFromStorage());
->>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
->>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
->>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+
     }
 
     @Override
@@ -100,9 +90,5 @@ public class SavePresenter implements NetworkDelegate ,SavePresenterInterface {
     }
 
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
 }
