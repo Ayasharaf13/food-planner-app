@@ -3,19 +3,21 @@ package com.example.foodplanner;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import android.database.Observable;
+import android.annotation.SuppressLint;
+import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.foodplanner.models.RandomMeal;
-import com.example.foodplanner.network.FoodClient;
-import com.example.foodplanner.network.NetworkDelegate;
+import com.example.foodplanner.detailsmeals.view.DetailsMealFragment;
+import com.example.foodplanner.search.view.MealCategoryFragmentDirections;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -25,16 +27,22 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private NavController navController;
+    private Uri uri;
 
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-      /*  if (getSupportActionBar() != null) {
-            getSupportActionBar().hide();
-        }
 
-       */
+        // getting the data from our intent in our uri.
+        uri = getIntent().getData();
+
+
+
+
+
         BottomNavigationView navView = findViewById(R.id.bottomNavigationView);
 
         navView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -57,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set up the ActionBar with NavController
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.homeFragment, R.id.searchFragment, R.id.plannerFragment, R.id.searchFragment
+                R.id.homeFragment, R.id.searchFragment, R.id.plannerFragment, R.id.saveFragment
         ).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
@@ -82,4 +90,36 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+/*
+the Activity as in onCreate Activity is just inflating the View and haven't set the NavHostController.
+So if you setup onClickListener in onStart of activity is will work as expected.
+ */
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        // checking if the uri is null or not.
+        if (uri != null) {
+            // if the uri is not null then we are getting
+            // the path segments and storing it in list.
+            List<String> parameters = uri.getPathSegments();
+
+            // after that we are extracting string
+            // from that parameters.
+            String param = parameters.get(parameters.size() - 1);
+
+            // Create a bundle to hold the argument
+            Bundle bundle = new Bundle();
+            bundle.putString("myArg", param);
+
+            // Find the NavController and navigate to the Fragment
+            NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
+            navController.navigate(R.id.detailsMealFragment, bundle);
+
+            //   NavDirections action = MealCategoryFragmentDirections.actionMealCategoryFragmentToDetailsMealFragment(param);
+            //  Navigation.findNavController(view).navigate(action);
+
+        }
+    }
 }

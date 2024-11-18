@@ -16,7 +16,7 @@
 
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="#DC7B5C"
+
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +25,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/layout_home"
             android:layout_width="match_parent"
+            android:background="@drawable/backgroundrandomhomemeal"
             android:layout_height="170dp">
 
             <ImageView
@@ -47,6 +48,7 @@
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="33dp"
                 android:layout_marginEnd="20dp"
+
                 android:fontFamily="@font/poppinssemibold"
                 android:textColor="@color/dark_green"
                 android:textSize="16sp"
@@ -137,26 +139,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardViewRandomMeal" />
-    <!--
-    <TextView
-        android:id="@+id/textNameRandomMeal"
-        android:layout_width="164dp"
-        android:layout_height="66dp"
-        android:background="@drawable/rounded"
-        android:text="Kagiry Egypt"
-        android:textColor="#171616"
-        tools:layout_editor_absoluteX="178dp"
-        tools:layout_editor_absoluteY="577dp">
 
-    </TextView>
-
-    <TextView
-        android:id="@+id/txt_new"
-        android:layout_width="68dp"
-        android:layout_height="28dp"
-
-        android:text="New"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="469dp" />
--->
 </androidx.constraintlayout.widget.ConstraintLayout>

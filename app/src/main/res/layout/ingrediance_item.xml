@@ -2,49 +2,28 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-android:id="@+id/constraint"
+    android:id="@+id/constraint"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/ingradianceImage"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="40dp"
-<<<<<<< HEAD
-        android:layout_marginTop="5dp"
-=======
-<<<<<<< HEAD
-        android:layout_marginTop="5dp"
-=======
-        android:layout_marginTop="10dp"
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ingradianceImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
 
-    <TextView
-        android:id="@+id/nameIngrediance"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
-        android:layout_width="77dp"
-        android:layout_height="17dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="1dp"
-<<<<<<< HEAD
-=======
-=======
-        android:layout_width="80dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="5dp"
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ingradianceImage" />
+        <TextView
+            android:id="@+id/nameIngrediance"
+            android:layout_width="77dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="1dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingradianceImage" />
 </androidx.constraintlayout.widget.ConstraintLayout>

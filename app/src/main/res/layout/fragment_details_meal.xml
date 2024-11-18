@@ -210,14 +210,7 @@
                 <WebView
                     android:id="@+id/webview"
                     android:layout_width="338dp"
-<<<<<<< HEAD
                     android:layout_marginBottom="80dp"
-=======
-<<<<<<< HEAD
-                    android:layout_marginBottom="80dp"
-=======
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
                     android:layout_height="200dp" />
 
 
