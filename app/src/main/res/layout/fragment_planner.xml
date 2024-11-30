@@ -21,6 +21,16 @@
         android:id="@+id/textTiltle"
         android:layout_width="140dp"
         android:layout_height="35dp"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
         android:layout_marginStart="80dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="278dp"
@@ -31,10 +41,39 @@
         android:text="Your  Plan"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/recyclerViewParentPlanner"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="278dp"
+
+        android:fontFamily="@font/poppinsbold"
+        android:text="Your  Plan"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/first"
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewParentPlanner"
         android:layout_width="396dp"
@@ -46,6 +85,365 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTiltle" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="410dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTiltle">
+
+        <TextView
+            android:id="@+id/textSat"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+
+
+            android:fontFamily="@font/rochesterregular"
+            android:text="Saturday"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/spinnerSat"
+            android:layout_width="10dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+
+            android:background="@drawable/icondropdownlist"
+
+
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/addMealSat"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+
+
+            android:src="@drawable/ic_baseline_add_24"
+            tools:src="@tools:sample/avatars" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_width="410dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first">
+
+
+        <TextView
+            android:id="@+id/textSun"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+
+
+
+            android:fontFamily="@font/rochesterregular"
+            android:text="Sunday"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/spinnerSun"
+            android:layout_width="10dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+
+            android:background="@drawable/icondropdownlist"
+
+            />
+
+        <ImageView
+            android:id="@+id/addMealSun"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+
+            android:src="@drawable/ic_baseline_add_24"
+            tools:src="@tools:sample/avatars" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/three"
+        android:layout_width="410dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second">
+
+
+        <TextView
+            android:id="@+id/textMon"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+
+
+            android:fontFamily="@font/rochesterregular"
+            android:text="Monday"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/spinnerMon"
+            android:layout_width="10dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+
+            android:background="@drawable/icondropdownlist"
+
+            />
+
+        <ImageView
+            android:id="@+id/addMealMon"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_baseline_add_24"
+            tools:src="@tools:sample/avatars" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/four"
+        android:layout_width="410dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/three">
+
+
+        <TextView
+            android:id="@+id/textTue"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+
+
+
+            android:fontFamily="@font/rochesterregular"
+            android:text="Tuesday"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/spinnerTues"
+            android:layout_width="10dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+
+            android:background="@drawable/icondropdownlist"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/addMealTue"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+
+            android:src="@drawable/ic_baseline_add_24"
+            tools:src="@tools:sample/avatars" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/five"
+        android:layout_width="410dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/four">
+
+
+        <TextView
+            android:id="@+id/textWed"
+
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+
+
+            android:fontFamily="@font/rochesterregular"
+            android:text="Wednesday"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/spinnerWed"
+            android:layout_width="10dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+
+            android:background="@drawable/icondropdownlist"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/addMealWed"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+
+
+            android:src="@drawable/ic_baseline_add_24"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/six"
+        android:layout_width="410dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/five">
+
+
+        <TextView
+            android:id="@+id/textThur"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+
+
+            android:fontFamily="@font/rochesterregular"
+            android:text="Thursday"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/spinnerThur"
+            android:layout_width="10dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+
+            android:background="@drawable/icondropdownlist"
+
+            />
+
+        <ImageView
+            android:id="@+id/addMealThur"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+
+            android:src="@drawable/ic_baseline_add_24"
+            tools:src="@tools:sample/avatars" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seven"
+        android:layout_width="410dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/six">
+
+
+        <TextView
+            android:id="@+id/textFri"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+
+
+
+            android:fontFamily="@font/rochesterregular"
+            android:text="Friday"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/spinnerFri"
+            android:layout_width="10dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+
+            android:background="@drawable/icondropdownlist"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/addMealFri"
+
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_baseline_add_24"
+            tools:src="@tools:sample/avatars" />
+
+
+
+    </LinearLayout>
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

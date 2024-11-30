@@ -1,6 +1,9 @@
 package com.example.foodplanner.home.view;
 
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -63,6 +66,19 @@ public class HomeFragment extends Fragment implements HomeViewInterface {
         homePresenterInterface = new HomePresenter(Repository.getInstance
                 (FoodClient.getInstance(), ConcreteLocalSource.getInstance(requireContext() ))
                 ,this);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+        homePresenterInterface.getRandomMeals();
+        homePresenterInterface.getSuggestionMeals();
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     }
 
     @Override
@@ -100,19 +116,51 @@ public class HomeFragment extends Fragment implements HomeViewInterface {
 
     @Override
     public void showData(List<RandomMeal> randomMeals) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        //  imageRandomMeal.setImageResource(randomMeals.indexOf(0));
+        //  nameOfRandomMeal.setText(randomMeals.indexOf(0));
+        // Log.i("show",randomMeals.toString());
+        // imageRandomMeal.setImageResource(R.drawable.ic_launcher_background);
+        Glide.with(requireContext())
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 
 
             //  imageRandomMeal.setImageResource(randomMeals.indexOf(0));
             //  nameOfRandomMeal.setText(randomMeals.indexOf(0));
             // Log.i("show",randomMeals.toString());
             // imageRandomMeal.setImageResource(R.drawable.ic_launcher_background);
+<<<<<<< HEAD
             Glide.with(requireActivity())
 
+=======
+            Glide.with(requireContext())
+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
                     .load(randomMeals.get(0).strMealThumb)
                     .error(R.drawable.ic_launcher_background)
                     .into(imageRandomMeal);
 
             txtTitleCard.setText(randomMeals.get(0).strMeal);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+        txtTitleCard.setText(randomMeals.get(0).strMeal);
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 
 
     }

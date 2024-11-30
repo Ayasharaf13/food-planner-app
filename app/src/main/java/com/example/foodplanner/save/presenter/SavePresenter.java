@@ -45,17 +45,29 @@ public class SavePresenter implements NetworkDelegate ,SavePresenterInterface {
     }
 
     @Override
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     public LiveData<List<RandomMeal>> getAllSavePlannerBySelectedDay(int id) {
         return repo.getAllMealsSavedPlannerBySelectDay(id);
     }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     @Override
     public LiveData<List<RandomMeal>> getAllSaveBySelectedDay(int id) {
         return repo.getAllMealFromStorage(id);
     }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     @Override
     public void OnSuccessResult(List<RandomMeal> listOfMeals) {
         listOfMeals.get(0).setSave(true);
@@ -63,8 +75,26 @@ public class SavePresenter implements NetworkDelegate ,SavePresenterInterface {
         listOfMeals.get(0).setId(36);// field for saved
         repo.saveMeal(listOfMeals);
         Log.i("sucess","done sucess save");
+<<<<<<< HEAD
         saveViewInterface.showMealSaved(repo.getAllMealFromStorage(36));
       //  saveViewInterface.showMealSaved(repo.getAllMealsSavedPlannerBySelectDay(36));
+=======
+
+        saveViewInterface.showMealSaved(repo.getAllMealFromStorage(36));
+      //  saveViewInterface.showMealSaved(repo.getAllMealsSavedPlannerBySelectDay(36));
+
+       // saveViewInterface.showMealSaved(repo.getAllMealFromStorage());
+        saveViewInterface.showMealSaved(repo.getAllMealsSavedPlannerBySelectDay(36));
+
+
+    public void OnSuccessResult(List<RandomMeal> listOfMeals) {
+        listOfMeals.get(0).setSave(true);
+        listOfMeals.get(0).setPlanner(false);
+        repo.saveMeal(listOfMeals);
+        Log.i("sucess","done sucess save");
+        saveViewInterface.showMealSaved(repo.getAllMealFromStorage());
+
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     }
 
     @Override
@@ -74,4 +104,8 @@ public class SavePresenter implements NetworkDelegate ,SavePresenterInterface {
     }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 }

@@ -1,14 +1,42 @@
 package com.example.foodplanner.db;
 
 import android.content.Context;
+<<<<<<< HEAD
 
 import androidx.annotation.NonNull;
+=======
+<<<<<<< HEAD
+
+import androidx.annotation.NonNull;
+=======
+<<<<<<< HEAD
+
+import androidx.annotation.NonNull;
+=======
+<<<<<<< HEAD
+
+import androidx.annotation.NonNull;
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.migration.Migration;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 import com.example.foodplanner.models.Day;
 import com.example.foodplanner.models.RandomMeal;
 
@@ -19,6 +47,24 @@ abstract class AppDataBase extends RoomDatabase {
 
 
     abstract FoodDAO getMealDao();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+import com.example.foodplanner.models.RandomMeal;
+
+@Database(entities = {RandomMeal.class},version = 5)
+abstract class AppDataBase extends RoomDatabase {
+
+
+    abstract FoodDAO getMealDao ();
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 
     private static volatile AppDataBase INSTANCE;
 
@@ -29,8 +75,27 @@ abstract class AppDataBase extends RoomDatabase {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                                     AppDataBase.class, "Meals_DB")
+<<<<<<< HEAD
                             .addMigrations(MIGRATION_5_6,MIGRATION_6_7)
 
+=======
+<<<<<<< HEAD
+                            .addMigrations(MIGRATION_5_6,MIGRATION_6_7)
+
+=======
+<<<<<<< HEAD
+                            .addMigrations(MIGRATION_5_6,MIGRATION_6_7)
+
+=======
+<<<<<<< HEAD
+                            .addMigrations(MIGRATION_5_6,MIGRATION_6_7)
+
+=======
+                            .fallbackToDestructiveMigration()
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
                             .build();
                 }
             }

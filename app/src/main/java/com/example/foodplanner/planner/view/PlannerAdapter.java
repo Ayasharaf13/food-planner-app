@@ -1,5 +1,4 @@
-package com.example.foodplanner.save.view;
-
+package com.example.foodplanner.planner.view;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
@@ -17,50 +16,26 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.foodplanner.R;
 import com.example.foodplanner.models.RandomMeal;
+import com.example.foodplanner.save.view.InterfaceAdapter;
 
-public class SaveMealsAdapter extends ListAdapter<RandomMeal,SaveMealsAdapter.ViewHolder> {
+public class PlannerAdapter extends ListAdapter<RandomMeal, PlannerAdapter.ViewHolder> {
 
+    InterfaceAdapter deleteItemPlanner;
 
-    InterfaceAdapter deleteClick  ;
-
-
-
-    protected SaveMealsAdapter( InterfaceAdapter delete) {
-        super(new SaveMealsAdapter.SaveMealsDiffUtil());
-
-        this.deleteClick =delete;
-    }
-
-
-
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-
-        ImageView imageMeal;
-        ImageView imageDelete;
-        TextView titleMeal;
-        Button watchBtn;
-
-
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            imageMeal = itemView.findViewById(R.id.imgMealSaveItem);
-            imageDelete = itemView.findViewById(R.id.deleteItem);
-            titleMeal = itemView.findViewById(R.id.nameMealSaveItem);
-            watchBtn = itemView.findViewById(R.id.btnWatchSaveItem);
-        }
+    public PlannerAdapter (InterfaceAdapter deleteItemPlanner){
+        super(new RandomMealDiffUtil() );
+        this.deleteItemPlanner = deleteItemPlanner;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.save_item, parent, false);
-        return new SaveMealsAdapter.ViewHolder(view);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.itemplanner, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
 
         RandomMeal currentObj = getItem(position);
         Glide.with(holder.itemView.getContext())
@@ -69,44 +44,46 @@ public class SaveMealsAdapter extends ListAdapter<RandomMeal,SaveMealsAdapter.Vi
                 .override(300, 200)
                 .error(R.drawable.ic_launcher_background)
                 .into(holder.imageMeal);
-
         holder.titleMeal.setText(currentObj.getStrMeal());
-
-
-        holder.imageDelete.setOnClickListener(new View.OnClickListener() {
+        holder.textCalender.setText(currentObj.getDate());
+        holder.deleteItemMealPlanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String id = currentObj.getIdMeal();
-                deleteClick.delete(id);
-<<<<<<< HEAD
-            }
-        });
-=======
-
-            }
-        });
-
-            }
-        });
-
-
+                 String id = currentObj.getIdMeal();
+                 deleteItemPlanner.delete(id);
             }
         });
 
 
 
-            }
-        });
-
-
-
-
-
->>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     }
 
 
-    static class SaveMealsDiffUtil extends DiffUtil.ItemCallback<RandomMeal> {
+
+    public static class ViewHolder extends RecyclerView.ViewHolder{
+        public ImageView imageMeal;
+        ImageView imageSave;
+        public TextView titleMeal;
+        Button watchBtn;
+        TextView textCalender;
+        ImageView deleteItemMealPlanner;
+
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            imageMeal = itemView.findViewById(R.id.imgMealItemPlanner);
+            titleMeal = itemView.findViewById(R.id.nameMealItemPlanner);
+            watchBtn = itemView.findViewById(R.id.btnWatchItemPlanner);
+            textCalender = itemView.findViewById(R.id.textCalender);
+            deleteItemMealPlanner = itemView.findViewById(R.id.imageDelteItemPlanner);
+
+
+        }
+    }
+
+
+
+    static class RandomMealDiffUtil extends DiffUtil.ItemCallback<RandomMeal> {
 
         @Override
         public boolean areItemsTheSame(@NonNull RandomMeal oldItem, @NonNull RandomMeal newItem) {
@@ -119,5 +96,4 @@ public class SaveMealsAdapter extends ListAdapter<RandomMeal,SaveMealsAdapter.Vi
             return oldItem.equals(newItem);
         }
     }
-
 }

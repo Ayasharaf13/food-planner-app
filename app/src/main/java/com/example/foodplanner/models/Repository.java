@@ -110,8 +110,18 @@ public class Repository implements  RepositoryInterface{
 
 
     @Override
+<<<<<<< HEAD
     public LiveData<List<RandomMeal>> getAllMealFromStorage(int id) {
         return localSource.getAllSavedData(id);
+=======
+<<<<<<< HEAD
+    public LiveData<List<RandomMeal>> getAllMealFromStorage(int id) {
+        return localSource.getAllSavedData(id);
+=======
+    public LiveData<List<RandomMeal>> getAllMealFromStorage() {
+        return localSource.getAllSavedData();
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     }
 
     @Override
@@ -124,6 +134,7 @@ public class Repository implements  RepositoryInterface{
     @Override
     public LiveData<List<RandomMeal>> getAllMealFromStoragePlanner() {
         return localSource.getAllSavedDataPlanner();
+<<<<<<< HEAD
     }
 
     @Override
@@ -146,6 +157,64 @@ public class Repository implements  RepositoryInterface{
         return localSource.getAllMealsPlannerBySelectedDay(id);
     }
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+    }
+
+    @Override
+    public LiveData<List<RandomMeal>> searchByIdPlanner(String id) {
+       return localSource.searchByIdPlanner(id);
+    }
+
+    @Override
+    public void saveDay(List<Day> days) {
+       localSource.saveDays(days);
+    }
+
+    @Override
+    public void deleteRepeatedData() {
+        localSource.deleteRepeatedData();
+    }
+
+    @Override
+    public LiveData<List<RandomMeal>> getAllMealsSavedPlannerBySelectDay(int id) {
+        return localSource.getAllMealsPlannerBySelectedDay(id);
+    }
+
+<<<<<<< HEAD
+=======
+=======
+    }
+
+    @Override
+    public LiveData<List<RandomMeal>> searchByIdPlanner(String id) {
+       return localSource.searchByIdPlanner(id);
+<<<<<<< HEAD
+    }
+
+    @Override
+    public void saveDay(List<Day> days) {
+       localSource.saveDays(days);
+    }
+
+    @Override
+    public void deleteRepeatedData() {
+        localSource.deleteRepeatedData();
+    }
+
+    @Override
+    public LiveData<List<RandomMeal>> getAllMealsSavedPlannerBySelectDay(int id) {
+        return localSource.getAllMealsPlannerBySelectedDay(id);
+=======
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+    }
+
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 
 }
 

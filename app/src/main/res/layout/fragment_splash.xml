@@ -7,6 +7,7 @@
      android:background="@drawable/splash"
     tools:context=".SplashFragment">
 
+<<<<<<< HEAD
 <Button
         android:id="@+id/buttonSignWithEmail"
         android:layout_width="350dp"
@@ -40,10 +41,49 @@
         android:layout_marginTop="540dp"
         android:layout_marginEnd="5dp"
         android:backgroundTint="@color/white"
+=======
+
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="399dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="55dp"
+            android:width="399dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/inter24ptregular"
+            android:text="Sign in with Email"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="399dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:width="399dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter24ptregular"
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
         android:text="Sign in with Google"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="18sp"
+<<<<<<< HEAD
         app:cornerRadius="20dp"
         app:icon="@drawable/googleicon"
         app:iconGravity="textEnd"
@@ -83,6 +123,12 @@
         app:layout_constraintStart_toEndOf="@+id/tvCreateAccount"
         app:layout_constraintTop_toBottomOf="@+id/buttonSignWithEmail"
         app:layout_constraintVertical_bias="0.535" />
+=======
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

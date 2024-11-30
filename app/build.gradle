@@ -68,6 +68,7 @@ dependencies {
 
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
+<<<<<<< HEAD
 
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
@@ -82,6 +83,13 @@ dependencies {
       implementation 'com.google.android.gms:play-services-auth:21.2.0'
 //to enable google service
     implementation 'androidx.credentials:credentials:1.0.0'
+=======
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
+
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
 
 
 }

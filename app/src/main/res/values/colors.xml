@@ -17,6 +17,7 @@
     <color name="dark_green">#003D3D</color>
     <color name="purple">#D0BCFF </color>
     <color name="purpletextbtn">#341856</color>
+<<<<<<< HEAD
     <color name="firstColor">#D48f4A</color>
     <color name="secondColor">#FFc727</color>
     <color name="tvGray">#6C6C6C</color>
@@ -24,7 +25,14 @@
     <color name="inputfield">#F1EEEE</color>
     <color name="lightshadeofblue"> #6C63FF</color>
 
+=======
+<<<<<<< HEAD
+    <color name="firstColor">#D48f4A</color>
+    <color name="secondColor">#FFc727</color>
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 
+=======
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
 
 
 

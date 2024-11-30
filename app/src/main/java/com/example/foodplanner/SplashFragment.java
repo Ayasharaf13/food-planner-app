@@ -1,5 +1,6 @@
 package com.example.foodplanner;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -44,6 +45,24 @@ public class SplashFragment extends Fragment {
     FirebaseAuth auth;
 
 
+=======
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+public class SplashFragment extends Fragment {
+
+
+
+    // TODO: Rename and change types of parameters
+    private String mParam1;
+    private String mParam2;
+
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     public SplashFragment() {
         // Required empty public constructor
     }
@@ -60,6 +79,7 @@ public class SplashFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
 
         auth = FirebaseAuth.getInstance();
            auth.signOut();
@@ -73,6 +93,12 @@ public class SplashFragment extends Fragment {
         // Initialize sign in client
         googleSignInClient = GoogleSignIn.getClient(requireActivity(), googleSignInOptions);
 
+=======
+        if (getArguments() != null) {
+
+
+        }
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     }
 
     @Override
@@ -81,6 +107,7 @@ public class SplashFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_splash, container, false);
     }
+<<<<<<< HEAD
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -190,3 +217,6 @@ public class SplashFragment extends Fragment {
     }
 }
 
+=======
+}
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8

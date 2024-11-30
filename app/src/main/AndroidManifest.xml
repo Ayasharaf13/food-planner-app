@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.foodplanner">
+=======
+    xmlns:tools="http://schemas.android.com/tools">
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 
     <uses-permission android:name="android.permission.INTERNET" />
 

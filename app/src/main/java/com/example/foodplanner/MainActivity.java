@@ -9,19 +9,33 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+<<<<<<< HEAD
 import android.annotation.SuppressLint;
 import android.net.Uri;
+=======
+<<<<<<< HEAD
+import android.annotation.SuppressLint;
+import android.net.Uri;
+=======
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import com.example.foodplanner.detailsmeals.view.DetailsMealFragment;
 import com.example.foodplanner.search.view.MealCategoryFragmentDirections;
+=======
+<<<<<<< HEAD
+import com.example.foodplanner.detailsmeals.view.DetailsMealFragment;
+import com.example.foodplanner.search.view.MealCategoryFragmentDirections;
+=======
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-
-import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -40,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
         uri = getIntent().getData();
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
         BottomNavigationView navView = findViewById(R.id.bottomNavigationView);
 
         navView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {

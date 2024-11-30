@@ -16,9 +16,24 @@
         <action
             android:id="@+id/action_homeFragment_to_saveFragment"
             app:destination="@id/saveFragment" />
+<<<<<<< HEAD
         <action
             android:id="@+id/action_homeFragment_to_watchVideoFragment"
             app:destination="@id/watchVideoFragment" />
+=======
+<<<<<<< HEAD
+        <action
+            android:id="@+id/action_homeFragment_to_watchVideoFragment"
+            app:destination="@id/watchVideoFragment" />
+=======
+<<<<<<< HEAD
+        <action
+            android:id="@+id/action_homeFragment_to_watchVideoFragment"
+            app:destination="@id/watchVideoFragment" />
+=======
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 
 
     </fragment>
@@ -56,9 +71,31 @@
         tools:layout="@layout/fragment_planner" >
         <argument
             android:name="idMealPlanner"
+<<<<<<< HEAD
             app:argType="string"
             app:nullable="true"
             android:defaultValue="@null" />
+=======
+<<<<<<< HEAD
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+=======
+<<<<<<< HEAD
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+=======
+<<<<<<< HEAD
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+=======
+            app:argType="string" />
+>>>>>>> eca1561c37458cd3dcb6567e08125bd49145daf2
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     </fragment>
     <fragment
         android:id="@+id/detailsMealFragment"
@@ -73,11 +110,20 @@
         <action
             android:id="@+id/action_detailsMealFragment_to_plannerFragment"
             app:destination="@id/plannerFragment" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
         <action
             android:id="@+id/action_detailsMealFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
 
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     </fragment>
     <fragment
         android:id="@+id/mealCategoryFragment"
@@ -130,6 +176,13 @@
             android:id="@+id/action_searchResultFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
     </fragment>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
     <fragment
         android:id="@+id/watchVideoFragment"
         android:name="com.example.foodplanner.home.view.WatchVideoFragment"
@@ -141,7 +194,15 @@
             app:nullable="true"
             android:defaultValue="@null" />
     </fragment>
+<<<<<<< HEAD
 
 
 
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> b48bd45d26781cdb878e9e8b47ee3307893594f3
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 </navigation>

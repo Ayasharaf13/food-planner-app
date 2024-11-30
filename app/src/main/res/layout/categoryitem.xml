@@ -8,11 +8,20 @@
     app:cardElevation="8dp"
     app:cardCornerRadius="12dp">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="8dp">
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
 
         <ImageView
             android:id="@+id/imageCategory"
@@ -35,5 +44,15 @@
             android:text="TextView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageCategory" />
+<<<<<<< HEAD
         </LinearLayout>
 </androidx.cardview.widget.CardView>
+=======
+<<<<<<< HEAD
+        </LinearLayout>
+</androidx.cardview.widget.CardView>
+=======
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> 0d9ef6d7aa17e8c1afc0e5627dc28cab6e65f3b9
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8

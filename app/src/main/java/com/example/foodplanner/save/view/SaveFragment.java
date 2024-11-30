@@ -88,8 +88,19 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
         saveRecyclerView = view.findViewById(R.id.recycleSave);
         GridLayoutManager layoutManager=new GridLayoutManager(requireContext(),2);
         saveRecyclerView.setLayoutManager(layoutManager);
+<<<<<<< HEAD
 
         savePresenterInterface.getAllSaveBySelectedDay(36).observe(SaveFragment.this,
+=======
+
+
+        savePresenterInterface.getAllSaveBySelectedDay(36).observe(SaveFragment.this,
+
+
+
+
+        savePresenterInterface.getAllSavePlannerBySelectedDay(36).observe(SaveFragment.this,
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
                 new Observer<List<RandomMeal>>() {
                     @Override
                     public void onChanged(List<RandomMeal> randomMeals) {
@@ -97,6 +108,10 @@ public class SaveFragment extends Fragment implements SaveViewInterface {
                         saveRecyclerView.setAdapter(saveMealsAdapter);
                     }
                 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0addf75370e7c58045e03d29d4f1ba2dc50defe8
         // Retrieve the argument using Safe Args
         if (getArguments() != null) {
 
