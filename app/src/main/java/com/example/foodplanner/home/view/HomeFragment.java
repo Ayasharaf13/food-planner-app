@@ -1,29 +1,23 @@
 package com.example.foodplanner.home.view;
 
-import static androidx.navigation.fragment.FragmentKt.findNavController;
-
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.helper.widget.Carousel;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavDirections;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.foodplanner.MainActivity;
 import com.example.foodplanner.R;
 import com.example.foodplanner.db.ConcreteLocalSource;
 import com.example.foodplanner.home.presenter.HomePresenter;
@@ -33,7 +27,6 @@ import com.example.foodplanner.models.Repository;
 import com.example.foodplanner.network.FoodClient;
 
 import java.util.List;
-import java.util.Objects;
 
 public class HomeFragment extends Fragment implements HomeViewInterface {
 
@@ -69,9 +62,7 @@ public class HomeFragment extends Fragment implements HomeViewInterface {
 
         homePresenterInterface = new HomePresenter(Repository.getInstance
                 (FoodClient.getInstance(), ConcreteLocalSource.getInstance(requireContext() ))
-                        ,this);
-        homePresenterInterface.getRandomMeals();
-        homePresenterInterface.getSuggestionMeals();
+                ,this);
     }
 
     @Override
@@ -88,49 +79,40 @@ public class HomeFragment extends Fragment implements HomeViewInterface {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         imageRandomMeal = view.findViewById(R.id.imageRandomMeal);
-       // nameOfRandomMeal = view.findViewById(R.id.textNameRandomMeal);
+        // nameOfRandomMeal = view.findViewById(R.id.textNameRandomMeal);
 
-          recyclerView = view.findViewById(R.id.recyclerView);
+        recyclerView = view.findViewById(R.id.recyclerView);
         GridLayoutManager layoutManager=new GridLayoutManager(requireContext(),2);
         //LinearLayoutManager layoutManager
-               // = new LinearLayoutManager(requireContext(), GridLayoutManager.VERTICAL, false);
-       // layoutManager = new LinearLayoutManager(requireActivity());
-          recyclerView.setLayoutManager(layoutManager);
-<<<<<<< HEAD
+        // = new LinearLayoutManager(requireContext(), GridLayoutManager.VERTICAL, false);
+        // layoutManager = new LinearLayoutManager(requireActivity());
+        recyclerView.setLayoutManager(layoutManager);
         homeAdapter = new HomeAdapter("home");
-=======
-<<<<<<< HEAD
-        homeAdapter = new HomeAdapter("home");
-=======
-<<<<<<< HEAD
-        homeAdapter = new HomeAdapter("home");
-=======
-        homeAdapter = new HomeAdapter(true);
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 
         txtTitleCard = view.findViewById(R.id.nameCardRandom);
         txtNewCard = view.findViewById(R.id.newTextCard);
         btnregister= view.findViewById(R.id.btn_registration);
 
-
+        homePresenterInterface.getRandomMeals();
+        homePresenterInterface.getSuggestionMeals();
 
     }
 
     @Override
     public void showData(List<RandomMeal> randomMeals) {
-      //  imageRandomMeal.setImageResource(randomMeals.indexOf(0));
-      //  nameOfRandomMeal.setText(randomMeals.indexOf(0));
-       // Log.i("show",randomMeals.toString());
-       // imageRandomMeal.setImageResource(R.drawable.ic_launcher_background);
-        Glide.with(requireContext())
 
-                .load(randomMeals.get(0).strMealThumb)
 
-                .into(imageRandomMeal);
+            //  imageRandomMeal.setImageResource(randomMeals.indexOf(0));
+            //  nameOfRandomMeal.setText(randomMeals.indexOf(0));
+            // Log.i("show",randomMeals.toString());
+            // imageRandomMeal.setImageResource(R.drawable.ic_launcher_background);
+            Glide.with(requireActivity())
 
-                txtTitleCard.setText(randomMeals.get(0).strMeal);
+                    .load(randomMeals.get(0).strMealThumb)
+                    .error(R.drawable.ic_launcher_background)
+                    .into(imageRandomMeal);
+
+            txtTitleCard.setText(randomMeals.get(0).strMeal);
 
 
     }

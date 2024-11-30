@@ -10,10 +10,20 @@
 
 
 
+
     <color name="gray"> #46474B</color>
     <color name="blacktxt">#000000 </color>
     <color name="blue">#3411FC</color>
     <color name="dark_green">#003D3D</color>
+    <color name="purple">#D0BCFF </color>
+    <color name="purpletextbtn">#341856</color>
+    <color name="firstColor">#D48f4A</color>
+    <color name="secondColor">#FFc727</color>
+    <color name="tvGray">#6C6C6C</color>
+    <color name="tvRegister"> #252525</color>
+    <color name="inputfield">#F1EEEE</color>
+    <color name="lightshadeofblue"> #6C63FF</color>
+
 
 
 

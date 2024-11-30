@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'androidx.navigation.safeargs'
+    // Add the Google services Gradle plugin
+     id 'com.google.gms.google-services'
 
 
 }
@@ -28,6 +30,10 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 }
 
@@ -57,49 +63,25 @@ dependencies {
 
     //annotationProcessor "com.github.bumptech.glide:compiler:4.11.0"
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
->>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
->>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
+
     def room_version = "2.6.1"
 
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> a9e1adc143fdd02927f2d841ceff456f59aad7bd
->>>>>>> 39bf4cf8ea1bfdb6b7aa4cf2b0d2b189bab7b0f9
->>>>>>> 810dc8649c025b71cee37d3d06ad0af310f877b8
->>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+        // Import the BoM for the Firebase platform
+        implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
+    implementation 'com.google.firebase:firebase-auth:23.1.0'
+        // Add the dependency for the Firebase Authentication library
+        // When using the BoM, you don't specify versions in Firebase library dependencies
+     //   implementation("com.google.firebase:firebase-auth")
+
+    // Also add the dependency for the Google Play services library and specify its version
+      implementation 'com.google.android.gms:play-services-auth:21.2.0'
+//to enable google service
+    implementation 'androidx.credentials:credentials:1.0.0'
 
 
 }

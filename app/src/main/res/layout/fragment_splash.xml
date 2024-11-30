@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/splash"
+    tools:context=".SplashFragment">
+
+<Button
+        android:id="@+id/buttonSignWithEmail"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/white"
+        android:text="Sign in with Email"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_email_24"
+        app:iconGravity="textEnd"
+        app:iconPadding="8dp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvCreateAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignWithGoogle"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSignWithGoogle"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/white"
+        android:text="Sign in with Google"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/googleicon"
+        app:iconGravity="textEnd"
+        app:iconPadding="8dp"
+        app:iconTint="@null"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Need an account? "
+        android:textColor="@color/tvGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignWithEmail" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="Create one"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCreateAccount"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignWithEmail"
+        app:layout_constraintVertical_bias="0.535" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

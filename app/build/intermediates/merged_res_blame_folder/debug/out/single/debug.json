@@ -1,0 +1,1382 @@
+[
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bl.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bl.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_itemplanner.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\itemplanner.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_lc.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\lc.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_vi.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\vi.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cx.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cx.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_personicon.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\personicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_uk.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\uk.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ma.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ma.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_hm.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\hm.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tm.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tm.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bz.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bz.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_uz.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\uz.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_wf.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\wf.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sa.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sa.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ph.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ph.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mp.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mp.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ke.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ke.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_so.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\so.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_pw.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\pw.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_lr.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\lr.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cy.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cy.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_trebuchetbold.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\trebuchetbold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_poppinssemibold.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\poppinssemibold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tn.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tn.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_ic_baseline_remove_red_eye_24.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\ic_baseline_remove_red_eye_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_meal_country.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_meal_country.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_et.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\et.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_backicon.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\backicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_za.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\za.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ao.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ao.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gp.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gp.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_by.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\by.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ck.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ck.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tz.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tz.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sn.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sn.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_eg.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\eg.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mq.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mq.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_cutlery.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\cutlery.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_rounded.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cz.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cz.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_vg.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\vg.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_to.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\to.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_er.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\er.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_splash.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_kg.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\kg.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gm.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gm.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sr.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sr.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mn.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mn.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_py.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\py.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_ingrediance_item.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\ingrediance_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_ic_baseline_delete_24.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\ic_baseline_delete_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_kh.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\kh.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cl.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cl.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sc.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sc.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bn.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bn.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_pf.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\pf.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_zm.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\zm.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_pt.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\pt.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_worksanssemibold.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\worksanssemibold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_sourcesans3medium.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\sourcesans3medium.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_pk.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\pk.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_fr.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\fr.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_playicon.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\playicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ci.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ci.png"
+    },
+    {
+        "merged": "com.example.foodplanner.app-merged_res-57:/layout_activity_splash.xml.flat",
+        "source": "com.example.foodplanner.app-main-59:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_im.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\im.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_details_meal.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_details_meal.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gr.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gr.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ls.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ls.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_lb.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\lb.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_fo.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\fo.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ga.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ga.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_round_btn.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\round_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_emailicon.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\emailicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_vu.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\vu.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cw.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cw.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_aq.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\aq.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gd.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gd.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tl.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tl.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_radiusscroll.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\radiusscroll.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ar.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ar.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_se.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\se.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_dk.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\dk.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_meal_category.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_meal_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_in.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\in.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ps.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ps.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cm.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cm.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tc.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tc.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bi.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bi.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_log_in.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_log_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_md.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\md.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mz.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mz.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cg.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cg.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sd.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sd.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bo.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bo.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_je.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\je.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_dj.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\dj.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cn.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cn.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sk.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sk.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gs.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gs.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_as.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\as.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_directionicon.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\directionicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bv.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bv.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ye.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ye.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ec.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ec.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_al.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\al.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_ic_baseline_email_24.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\ic_baseline_email_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mc.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mc.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_io.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\io.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mt.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mt.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_pl.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\pl.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ch.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ch.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_th.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\th.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_hk.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\hk.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bj.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bj.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_vn.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\vn.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_vc.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\vc.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_am.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\am.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sj.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sj.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gt.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gt.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_pr.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\pr.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ng.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ng.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_nl.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\nl.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mu.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mu.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_la.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\la.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_rs.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\rs.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gn.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gn.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sv.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sv.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_fk.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\fk.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_pm.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\pm.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_it.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\it.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_de.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\de.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_eh.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\eh.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ax.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ax.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gy.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gy.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_reduisforinputfield.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\reduisforinputfield.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_es.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\es.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_pg.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\pg.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_planneritem.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\planneritem.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_kz.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\kz.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_savedetails.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\savedetails.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ki.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ki.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_na.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\na.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_splash.jpg.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\splash.jpg"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_nr.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\nr.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mo.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mo.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_fj.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\fj.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_spoon.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\spoon.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_meal_item.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\meal_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ly.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ly.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mh.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mh.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_km.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\km.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ag.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ag.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_googleicon.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\googleicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gh.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gh.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_jo.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\jo.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_be.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\be.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_ic_save.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\ic_save.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cc.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cc.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mw.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mw.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_ic_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_au.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\au.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_sanssemicondensedbold.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\sanssemicondensedbold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ht.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ht.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_lk.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\lk.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_pa.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\pa.png"
+    },
+    {
+        "merged": "com.example.foodplanner.app-merged_res-57:/navigation_nav_splash.xml.flat",
+        "source": "com.example.foodplanner.app-main-59:/navigation/nav_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_us.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\us.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sh.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sh.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_ic_calendar_plan.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\ic_calendar_plan.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bs.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bs.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tf.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tf.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_xk.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\xk.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_shareicon.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\shareicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bd.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bd.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_fi.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\fi.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cr.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cr.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sx.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sx.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tg.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tg.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gw.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gw.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mg.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mg.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ir.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ir.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tt.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tt.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_sanssemibold.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\sanssemibold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gi.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gi.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_save.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_save.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cd.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cd.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_kn.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\kn.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_br.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\br.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_nf.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\nf.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ai.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ai.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_plusicon.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\plusicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_co.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\co.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ca.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ca.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_roundcardtxt.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\roundcardtxt.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_search_re.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_search_re.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_pn.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\pn.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_at.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\at.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_is.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\is.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_font.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\font.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_td.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\td.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_aw.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\aw.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_categoryitem.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\categoryitem.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bq.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bq.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ky.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ky.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_af.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\af.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sct.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sct.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_hr.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\hr.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tw.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tw.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_jp.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\jp.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_id.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\id.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tr.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tr.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_lv.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\lv.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mk.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mk.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_my.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\my.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_calendertoolbar.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\calendertoolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ne.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ne.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gg.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gg.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ua.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ua.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bf.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bf.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_hu.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\hu.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_register.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_me.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\me.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_kp.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\kp.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_robotomedium.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\robotomedium.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_dz.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\dz.png"
+    },
+    {
+        "merged": "com.example.foodplanner.app-merged_res-57:/navigation_nav_graph.xml.flat",
+        "source": "com.example.foodplanner.app-main-59:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mv.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mv.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_va.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\va.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cf.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cf.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bt.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bt.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_jm.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\jm.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gu.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gu.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sz.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sz.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_si.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\si.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_rw.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\rw.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bw.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bw.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ms.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ms.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_robotolight.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\robotolight.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tj.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tj.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_friedchicken.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\friedchicken.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_lu.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\lu.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sl.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sl.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_backgroundrandomhomemeal.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\backgroundrandomhomemeal.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ml.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ml.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ni.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ni.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ro.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ro.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ad.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ad.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ug.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ug.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_nir.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\nir.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_vector.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\vector.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bb.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bb.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ve.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ve.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_inter24ptregular.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\inter24ptregular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_st.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\st.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ge.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ge.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_az.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\az.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ru.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ru.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gl.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gl.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_nc.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\nc.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cu.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cu.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ae.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ae.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_montserratregular.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\montserratregular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_watch_video.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_watch_video.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mm.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mm.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ba.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ba.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_np.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\np.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_eng.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\eng.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_pe.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\pe.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ie.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ie.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bh.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bh.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_planner.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_planner.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_icondropdownlist.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\icondropdownlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_fm.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\fm.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ws.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ws.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_il.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\il.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_search_result.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_search_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_zw.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\zw.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_um.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\um.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gf.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gf.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sg.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sg.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mx.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mx.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_poppinsbold.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\poppinsbold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_li.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\li.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_qa.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\qa.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_kr.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\kr.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_no.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\no.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_nz.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\nz.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mf.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mf.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_ic_baseline_search_24.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\ic_baseline_search_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_lt.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\lt.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_gq.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\gq.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_om.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\om.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_re.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\re.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tk.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tk.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sy.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sy.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bg.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bg.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_cv.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\cv.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_dm.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\dm.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_bm.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\bm.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_mr.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\mr.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_rochesterregular.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\rochesterregular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_raduiossearch.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\raduiossearch.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_save_icon.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\save_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_save_item.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\save_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_search.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sm.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sm.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable_search.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable\\search.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_nu.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\nu.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_uy.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\uy.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_kw.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\kw.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_tv.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\tv.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_hn.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\hn.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_sb.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\sb.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ss.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ss.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ireland.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ireland.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-debug-58:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_iq.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\iq.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\layout_fragment_ingredients_meals.xml.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_ingredients_meals.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_yt.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\yt.png"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\font_suezone.ttf.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\font\\suezone.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-merged_res-57:\\drawable-v24_ee.png.flat",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\drawable-v24\\ee.png"
+    }
+]

@@ -6,8 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,7 +19,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.foodplanner.R;
 import com.example.foodplanner.home.view.HomeFragmentDirections;
-
 import com.example.foodplanner.models.RandomMeal;
 
 import java.util.Objects;
@@ -35,8 +32,6 @@ public class SearchAdapter extends ListAdapter<RandomMeal, SearchAdapter .ViewHo
 
         this.nav = nav;
     }
-
-
 
     @NonNull
     @Override

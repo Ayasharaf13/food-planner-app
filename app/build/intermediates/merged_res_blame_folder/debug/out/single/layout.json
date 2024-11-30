@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_watch_video.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_watch_video.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_register.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\planneritem.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\planneritem.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_planner.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_planner.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_meal_country.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_meal_country.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\save_item.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\save_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\ingrediance_item.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\ingrediance_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_log_in.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_log_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_ingredients_meals.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_ingredients_meals.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "com.example.foodplanner.app-mergeDebugResources-56:/layout/activity_splash.xml",
+        "source": "com.example.foodplanner.app-main-59:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_save.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_save.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_details_meal.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_details_meal.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\categoryitem.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\categoryitem.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_meal_category.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_meal_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_search_result.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_search_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_splash.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\fragment_search_re.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\fragment_search_re.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\itemplanner.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\itemplanner.xml"
+    },
+    {
+        "merged": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-mergeDebugResources-56:\\layout\\meal_item.xml",
+        "source": "C:\\Users\\AYA\\.gradle\\daemon\\8.2\\com.example.foodplanner.app-main-59:\\layout\\meal_item.xml"
+    }
+]

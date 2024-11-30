@@ -5,13 +5,20 @@ buildscript {
         google()
     }
     dependencies {
+        //4.3.10
+        classpath 'com.google.gms:google-services:4.3.15'
+
+
         def nav_version = "2.5.3"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
     }
 }
 plugins {
     id 'com.android.application' version '7.3.1' apply false
-  //  id 'com.android.library' version '1.8.0' apply false
+    // Add the dependency for the Google services Gradle plugin
+//  id 'com.google.gms.google-services' version '4.3.15' apply false
+
+    //  id 'com.android.library' version '1.8.0' apply false
 
 
   //  id 'com.android.application' version '7.3.1' apply false

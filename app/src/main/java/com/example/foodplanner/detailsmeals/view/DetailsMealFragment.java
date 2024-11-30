@@ -1,5 +1,7 @@
 package com.example.foodplanner.detailsmeals.view;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -10,16 +12,8 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-import androidx.recyclerview.widget.GridLayoutManager;
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -29,6 +23,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -37,40 +32,23 @@ import com.example.foodplanner.R;
 import com.example.foodplanner.db.ConcreteLocalSource;
 import com.example.foodplanner.detailsmeals.presenter.DetailsPresenter;
 import com.example.foodplanner.detailsmeals.presenter.DetailsPresenterInterface;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-import com.example.foodplanner.models.Ingredients;
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 import com.example.foodplanner.models.RandomMeal;
 import com.example.foodplanner.models.Repository;
 import com.example.foodplanner.network.FoodClient;
+import com.example.foodplanner.search.view.MealCategoryFragmentDirections;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-import java.lang.reflect.Method;
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 public class DetailsMealFragment extends Fragment implements DetailsViewInterface {
-
+    Intent sharingIntent;
     private ImageView mealImageView;
     private TextView titleMeal;
     private WebView webView;
+    private ImageView back;
+    private Button btnAddToPlanner;
     private TextView titleTextView, caloriesTextView, ratingTextView, instructionsTextView;
     private ImageView backImg;
     private ImageView calenderImage;
@@ -79,20 +57,10 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
     private String idMeal;
     private DetailsPresenterInterface detailsPresenter;
     private List <String>listOfIngredients =  new ArrayList<>();
-<<<<<<< HEAD
     private GenericAdapter<String> ingredientsAdapter;
-=======
-<<<<<<< HEAD
-    private GenericAdapter<String> ingredientsAdapter;
-=======
-<<<<<<< HEAD
-    private GenericAdapter<String> ingredientsAdapter;
-=======
-    private IngredientsAdapter ingredientsAdapter;
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
     private RecyclerView recyclerIngredients;
+
+
 
 
 
@@ -116,6 +84,7 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
 
         detailsPresenter =new DetailsPresenter(Repository.getInstance(FoodClient.getInstance(), ConcreteLocalSource.getInstance(requireContext())),this);
 
+
     }
 
     @Override
@@ -126,106 +95,122 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
         return inflater.inflate(R.layout.fragment_details_meal, container, false);
     }
 
+    @SuppressLint("SuspiciousIndentation")
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        // getting the data from our intent in our uri.
 
+          sharingIntent= new Intent(android.content.Intent.ACTION_SEND);
+        sharingIntent.setType("text/plain");
 
         // Bind views
-       mealImageView = view.findViewById(R.id.meal_image);
-       // titleTextView = view.findViewById(R.id.meal_title);
+        mealImageView = view.findViewById(R.id.meal_image);
+        // titleTextView = view.findViewById(R.id.meal_title);
 
         instructionsTextView = view.findViewById(R.id.meal_instructions);
-         recyclerIngredients = view.findViewById(R.id.recyclerIngred);
+        recyclerIngredients = view.findViewById(R.id.recyclerIngred);
 
 
-
-
-     //   backImg = view.findViewById(R.id.backicon);
+        //   backImg = view.findViewById(R.id.backicon);
         calenderImage = view.findViewById(R.id.calenderIcon);
         shareImage = view.findViewById(R.id.shareicon);
         titleMeal = view.findViewById(R.id.meal_title);
         webView = view.findViewById(R.id.webview);
-      //  saveDetails = view.findViewById(R.id.savedetails);
+        btnAddToPlanner = view.findViewById(R.id.btnadd);
+        back = view.findViewById(R.id.backicon);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
-        OnBindData bindData = (holder,currentObj)->{
-             String currentItem = (String) currentObj;
-              Log.i("testadapter",currentItem );
-        Glide.with(holder.itemView.getContext())
-                .load("https://www.themealdb.com/images/ingredients/"+currentObj+".png")
-                .override(300, 200)
-                .error(R.drawable.ic_launcher_background)
-                .into(holder.imageMeal);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               NavDirections action = DetailsMealFragmentDirections.actionDetailsMealFragmentToHomeFragment();
+                Navigation.findNavController(view).navigate(action);
+            }
+        });
+
+
+        //  saveDetails = view.findViewById(R.id.savedetails);
+
+       /* OnBindData bindData = (holder,currentObj)->{
+            String currentItem = (String) currentObj;
+            Log.i("testadapter",currentItem );
+            Glide.with(holder.itemView.getContext())
+                    .load("https://www.themealdb.com/images/ingredients/"+currentObj+".png")
+                    .override(300, 200)
+                    .error(R.drawable.ic_launcher_background)
+                    .into(holder.imageMeal);
 
 
             holder.titleMeal.setText(currentItem );
 
         };
 
-<<<<<<< HEAD
-          ingredientsAdapter = new GenericAdapter();
-=======
-<<<<<<< HEAD
-          ingredientsAdapter = new GenericAdapter();
-=======
-<<<<<<< HEAD
-          ingredientsAdapter = new GenericAdapter();
-=======
-          ingredientsAdapter = new IngredientsAdapter(bindData);
-=======
-          ingredientsAdapter = new IngredientsAdapter();
->>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
+        */
+
+        ingredientsAdapter = new GenericAdapter();
 
 
         // Toolbar setup
         Toolbar toolbar = view.findViewById(R.id.toolbar);
         setHasOptionsMenu(true);
-       // toolbar.setTitle("MyToolBar");
+        // toolbar.setTitle("MyToolBar");
         // calling the action bar
         ActionBar actionBar = ((AppCompatActivity) Objects.requireNonNull(getActivity())).getSupportActionBar();
 
         // Customize the back button
-       // assert actionBar != null;
-       // actionBar.setHomeAsUpIndicator(R.drawable.backicon);
+        // assert actionBar != null;
+        // actionBar.setHomeAsUpIndicator(R.drawable.backicon);
 
         toolbar.setNavigationIcon(null);
         // showing the back button in action bar
-       actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(false);
 
         //setSupportActionBar(toolbar);
-       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //getSupportActionBar().setDisplayShowHomeEnabled(true);
 
 
-// Retrieve the argument using Safe Args
+
+     // Retrieve the argument using Safe Args
         if (getArguments() != null) {
-            DetailsMealFragmentArgs args = DetailsMealFragmentArgs.fromBundle(getArguments());
-            idMeal = args.getIdMeal();
 
-              detailsPresenter.getMealsByID(idMeal);
+            String myArg = getArguments().getString("myArg");
+
+            if(myArg !=null) {
+                if(!(myArg.isEmpty()))
+                detailsPresenter.getMealsByID(myArg);
+            }else {
+                DetailsMealFragmentArgs args = DetailsMealFragmentArgs.fromBundle(getArguments());
+                idMeal = args.getIdMeal();
+                detailsPresenter.getMealsByID(idMeal);
+
+            }
+            btnAddToPlanner.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    NavDirections action = DetailsMealFragmentDirections.actionDetailsMealFragmentToPlannerFragment().setIdMealPlanner(idMeal);
+                    Navigation.findNavController(view).navigate(action);
+
+                }
+            });
         }
-    }
 
+
+    }
 
 
     @Override
     public void showMealsById(List<RandomMeal> randomMeals) {
-    RandomMeal mealDetails = randomMeals.get(0);
-    String myUrl = mealDetails.strYoutube;
-    Log.i("whereyout",myUrl);
+
+
+        RandomMeal mealDetails = randomMeals.get(0);
+        String  mealName = mealDetails.getStrMeal();
+        String imgMeal = mealDetails.getStrMealThumb();
+
+        String myUrl = mealDetails.getStrYoutube();
+        Log.i("whereyout",myUrl);
         Glide.with(getContext())
                 .load(mealDetails.getStrMealThumb())
                 .override(300, 200)
@@ -233,14 +218,14 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
                 .into(mealImageView);
 
 
-      titleMeal.setText(mealDetails.strMeal);
-      instructionsTextView.setText(mealDetails.strInstructions);
+        titleMeal.setText(mealDetails.strMeal);
+        instructionsTextView.setText(mealDetails.strInstructions);
 
-             //listOfIngredients.add("Lime");
-       listOfIngredients.add(mealDetails.getStrIngredient2());
+        //listOfIngredients.add("Lime");
+        listOfIngredients.add(mealDetails.getStrIngredient2());
         listOfIngredients.add(mealDetails.getStrIngredient3());
 
-       listOfIngredients.add(mealDetails.getStrIngredient4());
+        listOfIngredients.add(mealDetails.getStrIngredient4());
         listOfIngredients.add(mealDetails.getStrIngredient5());
         listOfIngredients.add(mealDetails.getStrIngredient6());
 
@@ -251,20 +236,6 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
         listOfIngredients.add(mealDetails.getStrIngredient9());
         listOfIngredients.add(mealDetails.getStrIngredient10());
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 6a649b922502be4cfefb51b572fb24b32b545c61
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
 
         //recyclerIngredients.setLayoutManager(new LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false));
@@ -273,16 +244,6 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
         recyclerIngredients.setAdapter(ingredientsAdapter);
 
         webView.getSettings().setJavaScriptEnabled(true);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 45173ce209f9e252426806759263499c2fadfdf6
->>>>>>> e84489f2e58bad0845127d6e28428cb42689c00b
->>>>>>> 1067dff3e2392aff76b3eb20357678676d1ad41e
         // WebViewClient allows you to handle
         // onPageFinished and override Url loading.
         webView.setWebViewClient(new WebViewClient());
@@ -298,7 +259,22 @@ public class DetailsMealFragment extends Fragment implements DetailsViewInterfac
         webView.loadUrl(embedUrl);
 
         Log.i("TestById",randomMeals.toString());
+        shareImage.setOnClickListener(new View.OnClickListener() {
+            // checking if the uri is null or not.
 
+
+            @Override
+            public void onClick(View view) {
+              String meal=  randomMeals.get(0).getIdMeal();
+               String shareBody = "https://www.mealdetail.com/"+meal;
+
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Check out this meal!");
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+
+                    startActivity(Intent.createChooser(sharingIntent, "Share via"));
+                }
+
+        });
     }
 
     public String youTubeVideoIdFromUrl(String url) throws URISyntaxException {
